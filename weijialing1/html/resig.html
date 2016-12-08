@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="../css/resi.css" />
+		<script src="../js/jquery-2.1.1.min.js"></script>
+		<!--<script src="register1.js"></script>-->
+		<script src="../js/resig.js"></script>
+		<!--<script src="register1.js"></script>-->
+	</head>
+	<body>
+	<!--注册页面一共有四大块 page_top、search-box、container、footer-pub-->
+	<!--第一块-->
+	<!--page_top包含一个div，这个div包含两个人div-->
+	<div class="page_top">
+		<div class="page_top_wid">
+	    	<div class="page_top_text">
+	    		<span class="ico_mob"><a href="#">手机版</a></span>
+	    		<span class="outer_sign">|</span>
+	    		<a href="#" rel="nofollow">Yiwubuy</a>
+	    		<span class="outer_sign">|</span>
+	    		<a href="#" rel="nofollow">市场信用</a>	    		
+	    	</div>
+	        <div class="page_item_list">
+	        	<ul class="logo_left">        	         		
+	        		<li id="shopingcart" class="page_item_list_li_bg">
+	        			<span class="buy-car"><a href="#" rel="nofollow">购物车</a></span>
+	        		</li>
+	        		<li class="page_item_list_li_bg">
+	        			<span class="sp-left" id="usercenter"><a href="#" rel="nofollow">用户中心</a></span>
+	        		</li>
+	        		<li>
+	        			<a href="#" rel="nofollow">帮助中心</a>	        			
+	        		</li>	
+	            </ul>
+	        </div>
+	     	<input type="hidden" id="rootPath" value="#">
+	    </div>
+	</div>
+	
+	
+	<!--第二块内容-->
+	<div class="search-box">
+		<!--共有两小块-->
+	    <div class="index-logo">
+	        <ul>
+	            <li class="logo">
+	            	<a href="#" title="义乌购首页" target="_self" rel="nofollow">
+	            		<img src='img/logo2.jpg' width="121" height="54">
+	            	</a>
+	            </li>
+	            <li class="logobanner">注册账号</li>
+	        </ul>
+	    </div> 
+	    <div class="search-sign c-999">
+	       	 如需帮助，请咨询：0579-81530000	
+	    </div>
+	</div>
+
+	<!--第三个模块，共有三个大块，一个隐藏块-->
+	<div class="container">
+		<!--第三个模块的头部oin-tit-bord-->
+		<div class="join-tit-bord" style="height:85px;">
+	    	<div class="join-process-bord">
+	        	<ul>
+	            	<li class="yes"><i class="yes">1</i>注册账号</li>
+	                <li><i class="no">2</i>完善资料</li>
+	                <li><i class="no">3</i>进入义乌购</li>
+	            </ul>
+	        </div>
+	    </div>
+	    <!--中间模块的左边部分-->
+		<div class="join-left-bord">
+			<!--包括两大块，一个h2标题，一个是join-two-bord注册内容-->
+	    	<h2><img src='img/tit-scjyh.png' width="84" height="19"></h2>
+	        <div class="join-two-bord">
+	        	<!--注册内容里面有一个大块-->
+	            <div class="join-info">
+	            	<!--大块里面有一个form表单，里面是一个div-->
+		            <form id="joinmobileForm" method="post" action="#" onsubmit="return false;">
+			           	<!--这里的input被隐藏了-->
+			            <input type="hidden" name="done" value="#" />
+			            <input type="hidden" name="capText" value="yFo399" />
+			            <!--div里是ul-->
+		                <div class="form-group">
+		                    <ul>
+		                        <li id="mobileborddiv" class="form-inline">
+		                            <label class="lable-only">手机 <em>*</em></label>
+		                            <input id="mobile" name="mobile" class="form-control input-sort" type="text" style="padding-left:28px; width:210px ; height: 32px;">
+		                            <label class="lable-countries" title="中国大陆手机号"></label>
+		                            <span id="mobilediv" class="join_box_caution" style="display:none;">帮您找回密码、订单、余额变动等消息提醒。</span>
+		                            <span name="errorInfo" id="mobileerrorInfo"></span>
+		                        </li>
+		                        <li class="form-inline" style="height:20px;line-height:20px;font-size: 12px;">
+		                        	<label class="lable-only"></label>没有手机？<span class="c-bluelink"><a href="#" id="joinurl">用邮箱注册</a> </span>   
+		                        </li>
+		                        <li id="mobilemaborddiv" class="form-inline">
+		                            <label class="lable-only">验证码  <em>*</em></label>
+		                            <input id="mobilema" name="verificationCode" class="form-control input-sort"  maxlength="6" type="text" style="width:210px ; height: 32px;"">
+		                            <label class="lable-yzm"></label>
+		                            <input type="hidden" id="authcode" name="authcode" value=""/>
+		                            <span id="mobilemadiv" class="join_box_caution" style="display:none;">请您输入手机收到的六位数验证码。</span>
+		                            <span name="errorInfo" id="errorInfo1"></span>
+		                        </li>
+		                        <li id="passwordborddiv" class="form-inline">
+		                            <label class="lable-only">登录密码  <em>*</em></label>
+		                            <input id="password" name="password" class="form-control input-sort" type="password"style="width:210px ; height: 32px;"" >
+		                            <span id="passworddiv" class="join_box_caution" style="display:none;">请输入6-20位字母（区分大小写）、数字或常用符号。</span>
+		                            <span name="errorInfo" id="errorInfo2"></span>
+		                        </li>
+		                        
+		
+		                        <li class="form-inline c-bluelink">
+		                            <label class="lable-only"></label>
+		                            <input name="infosup" id="infosup" type="checkbox" value="1" checked> 我已经认真阅读并同意<a href="#" target="_blank">《义乌购用户服务协议》</a><span name="errorInfo"></span>
+		                        </li>
+		                        <li class="form-inline">
+		                            <label class="lable-only"></label>
+		                            <input type="button" id="submitmobilejoinbtn" class="btn-y-b input-sort" value="注册">
+		                        </li>
+		                    </ul>
+		                </div>
+		            </form>    
+	            </div>
+	        </div>
+	    </div>
+    
+    <!--模块右边部分-->
+	<div class="join-right-bord" style="height:473px;_height:480px;">
+    	<h2><img src="#" width="86" height="19"></h2>
+    	<ul class="maket-user">
+        	<li class="f14 c-yellow">义乌市场经营户</li>
+            <li class="mt15">如果您是义乌市场经营户</li>
+            <li>请开通专属商铺账号：</li>
+            <li>发布产品；</li>
+            <li>免费使用。</li>
+            <li class="mt10"><span><a href="#">我要开通账号</a></span></li>
+        </ul>
+    	<ul>
+        	<li class="f14 c-yellow">其它经营户</li>
+            <li class="mt15">不是义乌市场经营户也可以</li>
+            <li>开通虚拟商铺账号了！</li>
+            <li>开通之后您可以：</li>
+            <li class="c-bluelink">享受市场采购贸易方式便利。<a href="#" target="_blank">了解更多</a></li>
+            <li class="mt10"><span><a href="#">马上申请开通</a></span></li>
+        </ul>
+    </div>
+    
+<!--<div class="login_outbox">
+	<div class="tit">验证码</div>
+	<div class="ico_close" title="关闭"></div>
+	      <ul class="login_ul">
+	      <span class="red" style="height:12px;" id="J_ErrorMsg"></span>
+	      <li class="li1 mt10">
+	        	<span class="sp_l">请输入验证码:</span>
+	            <span class="sp_r">
+                    <input id="checkcode" name="checkcode" maxlength="4" onblur="checkvalidateCode2()" type="text" class="form-control input-sort" style="width:100px;float:left;" value=""/> 
+                    <img src="http://work.yiwugou.com/common/captcha.htm" width="102" height="28" class="login_img" id="loadImage" style="float:left;margin-left:8px;cursor:pointer;"/>
+                </span>
+	        </li>
+            <li class="yzm-err"></li>
+	        <li class="mt10">
+		       <span class="sp_l">&nbsp;</span>
+		       <span class="sp_r">
+			        <input type="button" id="validatebtn" class="btn-y-b " value="发送手机验证码">
+		       </span>
+	        </li>
+	      </ul>
+</div>-->
+</div>
+
+	</body>
+</html>

@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="../css/list.css" />
+		<script type="text/javascript" src="../js/jquery-2.1.1.min.js" ></script>
+		<script type="text/javascript" src="../js/list1.js" ></script>
+		<!--<script type="text/javascript" src="list.js" ></script>-->
+	</head>
+	<body>
+		<div class="index_top">
+		<!--有一个大的div-->
+		<div class="index_topin">
+			<!--大的div里有两个div-->
+	        <div class="index_top_right">
+	        	<ul>
+	        	    <li id="credit_select" style="display: none;">
+						<span>我的积分:<span id="credit_num" onclick="#'"></span>
+						</span><span id="sign_class" class="sign-no">签到</span><span class="top-sign">|</span>
+					</li>
+	        		<li id="shopingcart">
+						<span class="buy-car">
+						<a href="#" rel="nofollow">购物车</a>
+						</span><span class="top-sign">|</span>
+					</li>
+	        		<li>
+						<span class="sp-left" id="usercenter">
+						   <a href="#" rel="nofollow">用户中心</a>
+						</span><span class="top-sign">|</span>
+					</li>
+	        		<li class="khfuwu">
+	        		    <a href="#" rel="nofollow">客户服务</a><span class="top-sign">|</span>
+	        		    <span class="khhover">客户服务<i></i></span>
+						<div class="khfw_xl">
+							<p class="khfw_bbfk">
+							 <a href="#">帮助中心</a>
+							 <a href="#">意见反馈</a>
+							</p>
+							<p class="kf_time">
+							0579-81530000<br>
+							(08:30-22:00)
+							</p>
+							<p class="kf_email">kefu@yiwugou.com</p>
+						</div>
+	        		</li>
+	        		<li class="index_languagelist">
+						<div><span>中 文</span></div>
+						<ul style="display: none;">
+							<li><a href="#" target="_top">English</a></li>
+							<li><a href="#" target="_top">Russian</a></li>
+							<li><a href="#" target="_top">Arabic</a></li>
+							<li><a href="#" target="_top">Spanish</a></li>
+							<li><a href="#" target="_top">French</a></li>
+						</ul>
+	        		</li>
+	            </ul>
+	        </div>
+			<div class="index_top_left">
+		    	<span class="top_mob"><a href="#">手机版</a></span>
+				<span class="top-sign">|</span>
+				<a href="#" rel="nofollow">市场信用</a>
+				<span class="top-sign">|</span>
+	   			<span id="w-city">义乌</span>
+	   			<span id="w-img"><img src="img/Connect_logo_1.png" height="16"></span>
+	   			<span id="w-wind"></span>
+	   			<span id="w-temperature">15 ~ 6℃</span>
+	    	</div>
+		     <!--<input type="hidden" id="rootPath" value="">
+		     <input type="hidden" id="imagespath" value="http://images.onccc.com/link2pic2/images/yiwugou/www/images/">
+		     <input type="hidden" id="mapPath" value="http://images.onccc.com/">
+		     <input type="hidden" id="workPath" value="http://work.yiwugou.com">-->
+    	</div>
+</div>
+
+<!--搜索状态，一共分为三大模块，一个是图片+搜索+登录注册模块-->
+<div class="search-part">
+	<!--search-partleft一共分为earch-logo+station-->
+   	<div class="search-partleft">
+   		
+	    <div class="search-logo">
+	      <a href="#" title="义乌购首页" target="_self" rel="nofollow">
+	        <img src="img/logo2.jpg" width="121" height="54">
+	      </a>
+		</div>
+		<!--station分为span+index-station-bord-->
+   	</div>
+   <!--分为from表单+img-search-bord-->
+   <div class="search-input">
+       <form name="forms" id="searchform" method="get" target="_self" action="/search/s.html">
+	        <!--搜索第一个部分-->
+	        <div class="search-index">
+		        <div class="search-icon">
+			       <i class=""></i>
+				    <div class="search-leibie" style="display: none;">
+						<p class="search-top"></p>
+						< ul id="searchSort">
+							<li data-url="/search/s.html">搜全部</li>
+							<li data-url="/search/sproduct.html">搜商品</li>
+							<li data-url="/search/sshop.html">搜商铺</li>
+						</ul>
+        			</div>
+			    </div>
+			   <input name="q" id="inputkey" class="input-pro-shop" type="text" autocomplete="off" onkeypress="searchEnter();" value="">
+		       <span class="ico-img-search" title="点击上传图片就可以搜索啦"></span>
+		       <span class="search-button" onclick="searchCharacterFilter();">搜索</span>
+			</div>
+			<!--搜索第二部分-->
+		    <div class="ac_results" style="display: none;">
+		    </div>
+		    <!--搜索第三部分-->
+		    <div class="suggest_default_ctn" style="display: none;">
+				 <p class="history_title">您最近搜过</p>
+				 <div class="history_body"></div>
+		    </div>  
+	   </form>
+	   <!--图片搜索-->
+	   <!--<div class="img-search-bord">
+			<span class="img-close"></span>
+			<div class="clr"></div>
+			<input name="url" id="inputimgsearch" class="input-pro-shop" type="text" value="" placeholder="在此粘贴图片链接搜索">
+			<span class="search-button" id="imgsearchbutton">图片搜索</span>
+			<div class="clr"></div>
+			<span class="btn-img-bord">
+				<span id="img-btn" class="img-btn" style="position: relative; overflow: hidden;"><input type="file" name="file" style="position: absolute; right: 0px; top: 0px; font-family: Arial; margin: 0px; padding: 0px; cursor: pointer; opacity: 0;"></span>
+			</span>
+	    </div>-->
+   </div>
+    <!--第二部分的注册登录-->
+    <div class="search-sign">
+    	<!--1-->
+	    <span id="login_ul">
+	    	<span class="search-login">
+	        	<a href="#" target="_self" id="userSignIn" rel="nofollow">
+	            	<span class="ico"></span>
+	            	<span class="sp-left">登录</span>
+	        	</a>
+	        	<span class="top-sign">|</span>
+	    	</span>
+	        <span class="search-signx c-ylink"><a href="#" id="userjoin" rel="nofollow">注册</a></span>
+	    </span>
+	    <!--2-->
+        <span class="pl5" style="display:none" id="logout_ul">
+            <span class="seqrch-signok">
+                <a href="#">
+	                <span class="ico"></span>
+	                <span class="sp-left">
+		                <span class="pointer" id="ajaxnick"></span>
+	                </span>
+                 </a>
+            </span>
+            <span class="c-ylink f14px">, <a href="#" target="_self" id="userSignOut">退出</a></span>
+        </span>
+        <!--3-->
+		<div class="seqrch-phb"><a href="#" rel="nofollow"><span class="ico"></span><span class="sp-left">排行榜</span></a></div>
+    </div>
+   <!--<div class="clr"></div>-->
+</div>
+
+
+<!--第二大块-->
+<div id="frame" style="width: 950px;">
+	
+
+	
+	<!--第二块头部搜索-->
+	<div class="fontbluelink">
+		<span class="pro-nav-lineh">
+			<a href="#">首页</a>>
+			<a href="#">商铺商品</a>>
+			<a href="#">义乌国际商贸城</a>>
+			<a>一楼</a>>
+			<a href="#">仿真花</a>
+		</span>
+		<span class="class-search">
+			<input type="text">
+		</span>
+	</div>
+	<!--第二块的分层-->
+	<div id="yiqu" class="louc-pro-bord fontbluelink">
+		<span>
+			<em>一层</em>
+			<a href="#">花类（仿真类）</a>
+			<a href="#">花类配件</a>
+			<a href="#">东铺房（玩具、饰品）</a>
+		</span>
+		<span>
+			<em>二层</em>
+			<a href="#">头饰</a>
+			<a href="#">珠宝首饰</a>
+			<a href="#">东铺房（饰品）</a>
+		</span>
+		<span>
+			<em>三层</em>
+			<a href="#">头饰</a>
+			<a href="#">珠宝首饰</a>
+			<a href="#">东铺房（饰品）</a>
+			<a href="#">头饰</a>
+			<a href="#">珠宝首饰</a>
+			<a href="#">东铺房（饰品</a>
+			<a href="#">东铺房（饰品及饰品配件）</a>
+		</span>
+		<span>
+			<em>四层</em>			
+			<a href="#">台商馆（花类*饰品*工艺品）</a>
+			<a href="#">生产企业直销中心（珠宝首饰*工艺品）</a>
+		</span>
+		
+	</div>
+	
+	<!--第二块的商品店铺-->
+	<div class="category-pro-bord">
+		<ul class="category">
+			<li><a href="#">商铺</a></li>
+			<li><a href="#">商品</a></li>
+		</ul>
+		
+		<ul class="page">
+			<li><span>1/100</span><span><</span><span><</span></li>			
+		</ul>
+		<ul class="search-number-bord">
+			<li>共找到<span>13224</span>信息</li>			
+		</ul>
+	</div>
+	
+	<!--排序-->
+	<div class="screen-pro-bord mt10px">
+		<div class="aaaa">
+			<div>
+				<span>排序</span><span class="zh">综合</span><span class="zh">最新</span><span class="zh">销量</span><span class="zh">价位：</span>
+				<input type="text" style="width: 30px;">—<input type="text" style="width: 30px;">
+				<input type="submit" value="确定" style="width: 30px;">
+			</div>
+		</div>		
+	</div>
+	
+	<!--您还可以找-->
+	<div class="keyclass_bord">
+		<div>
+			<span>您还可以找：</span>
+			<a href="#"><span>干花</a></span>
+			<a href="#"><span>仿真花</a></span>
+			<a href="#"><span>仿真植物</a></span>
+			<a href="#"><span>仿真水果</a></span>
+		</div>
+	</div>
+	
+	
+	<!--具体的分类-->
+	<input type='hidden' id='current_page' />
+	<input type='hidden' id='show_per_page' />
+	<!--<div class="pro_list">
+		
+		<div class="pro_list1">
+			<p class="p1"><a href="#"><img class="imge1" src="img/canpi.jpg"></a></p>
+			<!--<p class="p1"></p>-->
+			<!--<ul>
+				<li class="price1"></li>
+				<li class="miaoshu1"></li>
+				<li class="miaoshu2"></li>
+			</ul>
+			
+		</div>				
+		
+		<div class="pro_list1">
+			<p><a href="#"><img src="img/canpi.jpg"></a></p>
+			<ul>
+				<li class="price1"></li>
+				<li class="miaoshu1"></li>
+				<li class="miaoshu2"></li>
+			</ul>
+		</div>
+		<div class="pro_list1">
+			<p><a href="#"><img src="img/canpi.jpg"></a></p>
+			<ul>
+				<li class="price1"></li>
+				<li class="miaoshu1"></li>
+				<li class="miaoshu2"></li>
+			</ul>
+		</div>
+		<div class="pro_list1">
+			<p><a href="#"><img src="img/canpi.jpg"></a></p>
+			<ul>
+				<li class="price1"></li>
+				<li class="miaoshu1"></li>
+				<li class="miaoshu2"></li>
+			</ul>
+		</div>
+		<div class="pro_list1">
+			<p><a href="#"><img src="img/canpi.jpg"></a></p>
+			<ul>
+				<li class="price1"></li>
+				<li class="miaoshu1"></li>
+				<li class="miaoshu2"></li>
+			</ul>
+		</div>
+		<div class="pro_list1">
+			<p><a href="#"><img src="img/canpi.jpg"></a></p>
+			<ul>
+				<li class="price1"></li>
+				<li class="miaoshu1"></li>
+				<li class="miaoshu2"></li>
+			</ul>
+		</div>
+		<div class="pro_list1">
+			<p><a href="#"><img src="img/canpi.jpg"></a></p>
+			<ul>
+				<li class="price1"></li>
+				<li class="miaoshu1"></li>
+				<li class="miaoshu2"></li>
+			</ul>
+		</div>
+		
+		<!--以上为28个分块-->
+		<!--第二页-->
+		<!--<div class="pro_list1">
+			<p><a href="#"><img src="img/canpi.jpg"></a></p>
+			<ul>
+				<li class="price1"></li>
+				<li class="miaoshu1"></li>
+				<li class="miaoshu2"></li>
+			</ul>
+		</div>
+		<div class="pro_list1">
+			<p><a href="#"><img src="img/canpi.jpg"></a></p>
+			<ul>
+				<li class="price1"></li>
+				<li class="miaoshu1"></li>
+				<li class="miaoshu2"></li>
+			</ul>
+		</div>
+		<div class="pro_list1">
+			<p><a href="#"><img src="img/canpi.jpg"></a></p>
+			<ul>
+				<li class="price1"></li>
+				<li class="miaoshu1"></li>
+				<li class="miaoshu2"></li>
+			</ul>
+		</div>
+		<div class="pro_list1">
+			<p><a href="#"><img src="img/canpi.jpg"></a></p>
+			<ul>
+				<li class="price1"></li>
+				<li class="miaoshu1"></li>
+				<li class="miaoshu2"></li>
+			</ul>
+		</div>
+		<div class="pro_list1">
+			<p><a href="#"><img src="img/canpi.jpg"></a></p>
+			<ul>
+				<li class="price1"></li>
+				<li class="miaoshu1"></li>
+				<li class="miaoshu2"></li>
+			</ul>
+		</div>
+		<div class="pro_list1">
+			<p><a href="#"><img src="img/canpi.jpg"></a></p>
+			<ul>
+				<li class="price1"></li>
+				<li class="miaoshu1"></li>
+				<li class="miaoshu2"></li>
+			</ul>
+		</div>
+		-->
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	</div>
+	<!--分页按钮-->
+	<div id='page_navigation'></div><br>
+	
+	
+	
+	
+	
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+	</body>
+</html>

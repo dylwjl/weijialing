@@ -1,0 +1,112 @@
+*{margin: 0; padding: 0;}
+ul li{list-style: none;font-size: 12px;}
+
+a:link{text-decoration: none;}
+label{font-size: 12px;}
+/*头部信息*/
+.page_top{width:100%;margin:0 auto;height:30px;border-bottom:1px solid #eee;background:#fff;}
+.page_top a{color:#868686;}
+/*头部的大块*/
+.page_top_wid{width:950px;margin:0 auto;}
+/*头部左边的内容*/
+.page_top_text{float:left; line-height:30px;}
+/*头部右边的内容*/
+.page_item_list{float:right;margin-top:1px;}
+/*每个li*/
+.page_item_list li{float:left;position:relative;padding-top:5px; _display:inline; height:25px;padding-left:8px;padding-right:10px;}
+/*前两个li*/
+.page_item_list_li_bg{background:url(http://images.onccc.com/i002/ywgo/i2/ico_index_cloum.gif) right 8px no-repeat;}
+/*li里的购物车超链接*/
+.page_item_list li.last a{background:none;margin-right:0;}
+.page_item_list .page_item_list_sub span{width:86px;display:block;height:20px;}
+
+
+/*第二大块*/
+.search-box{width:950px;height:80px;margin:0 auto;position:relative;z-index:100000;}
+/*左边模块*/
+.index-logo{height:80px;width:280px;float:left;position:relative;}
+.index-logo .logo{width:128px;float:left;margin:13px 0px 0 5px; _display:inline;}
+.index-logo .logobanner{display:inline-block;width:108px;margin:18px 0 0 8px;float:left; font-family:"微软雅黑";font-size:24px;color:#999;}
+/*右边模块*/
+.search-box .search-sign{ width:200px; float:right; margin-top:38px; font-size: 12px;}
+.c-999{color:#999;}
+
+/*第三块*/
+/*第三块的头部*/
+.container {margin-right: auto;margin-left: auto;width: 950px;}
+.join-tit-bord {width:950px; overflow:hidden;height:65px;}
+.join-process-bord {padding:0 100px;_padding:0 65px;height:40px; margin-top:15px;position:relative;border-bottom:2px solid #ddd;}
+.join-process-bord ul li {height:40px;width:160px;margin-right:85px;font-size:18px; font-family:"微软雅黑";display:inline-block;float:left;margin-bottom:-2px; text-align:center;color:#999;}
+.join-process-bord ul li.yes {border-bottom:2px solid #f60;color:#444;}
+.join-process-bord ul li i {display:inline-block;height:24px;width:24px;margin-right:3px;text-align:center;line-height:24px;font-size:16px;}
+.join-process-bord ul li i.yes{background-position:-24px 0px;}
+.join-process-bord ul li i.no {background-position:0px 0px;}
+/*第三块的右边*/
+.join-guide-left {width:380px;_width:327px;float:left;height:570px;padding:25px;border-left:1px solid #dfdfdf;border-top:1px solid #dfdfdf;border-bottom:1px solid #dfdfdf;font-family:"微软雅黑";}
+.join-guide-left .sup {font-size:24px;color:#6dba00;}
+.join-guide-left .sup i,.join-guide-left .hot {background:url(http://yiwugouimg.oss-cn-hangzhou.aliyuncs.com/res/cnwork/images/registered/ico-newjion.png) no-repeat;}
+.join-guide-left .sup i{display:block;float:left;background-position:0px -84px;width:32px;height:32px;margin-right:8px;}
+.join-guide-left .account {color:#999;padding-left:38px;margin-top:8px;}
+.join-guide-left .account span {font-weight:bold;}
+.join-guide-left .hot {width:258px;height:60px;line-height:60px;padding-left:20px;margin:20px 0;background-position:0px -24px;font-size:16px;color:#fff;}
+.join-guide-left .price {margin-top:35px;}
+/*第三块的左边*/
+.join-guide-right {width:500px;float:right;border:1px solid #dfdfdf;height:617px;}
+.form-group .lable-countries {display:inline-block; position:absolute;z-index:22;width:16px;height:12px;margin-top:17px;_margin-top:13px;margin-left:-231px;_margin-left:-278px;background:url(../images/ico-china.png) no-repeat;}
+.form-group .lable-yzm {display:inline-block; position:absolute;z-index:22;width:96px;height:26px;line-height:26px;border-radius:4px;margin-top:10px;_margin-top:6px;margin-left:-101px;_margin-left:-101px;background-color:#f60;text-align:center;color:#fff; cursor:pointer;}
+.form-group .lable-yzmsq {display:inline-block; position:absolute;z-index:22;width:96px;height:26px;line-height:26px;border-radius:4px;margin-top:10px;margin-left:-101px;background-color:#ccc;text-align:center;color:#fff;}
+
+.form-inline .join_box_err {display:inline;background:url(../images/ico_veri_err.png) no-repeat 3px 1px;padding-left:24px;color:#f00;}
+.form-inline .join_box_caution {display:inline-block;background:url(../images/ico_veri_caution.png) no-repeat 3px 14px;padding-left:24px;color:#999;}
+.form-inline .join_box_sub {}
+/*lable的位置设置*/
+.form-group .lable-onlysort {display:inline-block;width:90px;padding:6px 3px 6px 0;margin-right:5px;text-align:right;color:#999;} 
+.form-group .form-inline {display:inline-block;width:100%;height:42px;line-height:42px; clear:both;margin-bottom:10px;}/*表单列表单行定义*/
+/*表单input设置*/
+.form-group .form-inline-textarea {display:inline-block;width:100%;padding:0px 0;clear:both;}/*表单列表单行定义*/
+/*input的设置*/
+.form-control {
+   display:inline;
+  width: 100%;
+  height: 30px;_height:22px;
+  padding: 4px 12px;
+  font-size: 14px;
+  line-height: 1.428571429;
+  color: #444444;
+  vertical-align: middle;
+  background-color: #ffffff;
+  background-image: none;
+  border: 1px solid #dfdfdf;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+          transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+}
+.input-sort180 {width:180px;padding-left:8px;outline:none;}
+.form-control:focus,.input-textare:focus {outline: 0;}
+/*多项选择(关注行业)*/
+.pro-guide em {
+    width: 95px;
+    _width: 100px;
+    display: inline-block;
+    font-style: initial;
+    font-size: 12px;
+}
+.form-group .lable-onlysort {display:inline-block;width:92px;padding:6px 3px 6px 0;margin-right:5px;text-align:right;color:#999;} 
+.pro-guide {padding-left:90px;display:inline-block;width:430px;_width:400px;line-height:30px;_float:right;}
+.mt10{margin-top:10px;}
+.pro-guide{line-height: 30px;}
+/*确认提交*/
+.btn-y-b,.btn-y-m,.btn-y-s{background-color:#f60;color:#fff;font-weight:bold;border:0;}
+.btn-y-b,.btn-b-b,.btn-g-b,.btn-r-b{line-height:35px;height:35px;padding: 0 20px;_padding: 0 10px;font-size:18px;border-radius:4px;}
+.btn-y-b:hover,.btn-y-m:hover,.btn-y-s:hover{cursor:pointer;background-color: #ff7519;}
+.input-sort {width:240px;padding-left:5px;outline:none;}
+/*确认提交前面的空白*/
+.form-group .lable-only{display:inline-block;height:34px;_height:24px;font-size:12px;line-height: 1.428571429;vertical-align: middle;}
+.form-group .lable-only {display:inline-block;width:120px;padding:6px 3px 6px 0;margin-right:5px;text-align:right;} /* label 标题定义*/
+.form-group .lable-only em {font-family:simsun;color:#f00;}
+
+
+
+

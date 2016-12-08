@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+		#zong{
+			height: 520px;
+			margin: 0 auto;
+			background-color: burlywood;
+		}
+		#top{
+			display: inline-block;
+			width: 200px;
+			height: 30px;
+			background-color: coral;
+			margin-left: 100px;
+			margin-top: 20px;
+		}
+		div {
+	    padding-left: 50px;
+	    line-height: 40px;
+	    font-size: 10px;
+	    width: 400px;
+	    
+		}
+
+		div input {
+	    height: 20px;
+	    width: 200px;
+		}
+
+	div span {
+    color: red;
+    
+	}
+	#btnLogin{
+		width: 50px;
+		margin-left: 130px;
+	}
+	h2{
+		margin: 0;
+	}
+	#dzyx #di{
+		display: inline-block;
+		background-color: red;
+		width: 60px;
+		height: 25px;
+	}
+	#zhong{
+		display: inline-block;
+		background-color: blue;
+		width: 60px;
+		height: 25px;
+	}
+	#gao{
+		display: inline-block;
+		background-color: green;
+		width: 60px;
+		height: 25px;
+	}
+	#savePwd{
+		width: 20px;
+	}
+	</style>
+	
+	<script>
+		onload=function()
+		{
+			//验证顶部
+			var top1=document.getElementById("top");
+			//验证用户名	
+			var oDiv = document.getElementById("yhm");			
+			var oLabel = oDiv.getElementsByTagName("label")[0];
+			var oInput = oDiv.getElementsByTagName("input")[0];
+	
+			// oninput 是当输入框里面的值发生改变，就会触发
+			oInput.oninput = function() 
+			{
+				
+				// 取出输入框的值
+				var str = this.value;
+				console.log(str);
+				var reg = /^[a-zA-Z]\w{7,19}$/;
+				//reg.test 验证这个字符串 str 是否满足正则表达式的要求
+				if(reg.test(str))
+				{
+					top1.innerHTML = "用户输入合法";
+				}
+				else
+				{
+					top1.innerHTML = "用户输入不合法";
+				}
+			}
+			
+			//验证密码
+			var oDiv1 = document.getElementById("dlmm");			
+			var oLabel1 = oDiv1.getElementsByTagName("label")[0];
+			var oInput1 = oDiv1.getElementsByTagName("input")[0];
+	
+			// oninput 是当输入框里面的值发生改变，就会触发
+			oInput1.oninput = function() 
+			{
+				
+				// 取出输入框的值
+				var str = this.value;
+				
+				var reg = /^[a-zA-Z]\w{7,19}$/;
+				//reg.test 验证这个字符串 str 是否满足正则表达式的要求
+				if(reg.test(str))
+				{
+					top1.innerHTML = "密码输入合法";
+				}
+				else
+				{
+					top1.innerHTML = "密码输入不合法";
+				}
+			}
+			//重复登录密码
+			var oDiv2 = document.getElementById("zfdlmm");			
+			var oLabel2 = oDiv2.getElementsByTagName("label")[0];
+			var oInput2 = oDiv2.getElementsByTagName("input")[0];
+			oInput2.oninput= function() 
+			{
+				
+				// 取出输入框的值
+				var str = this.value;
+				var str1 = oInput2.value;
+			var dlmm=oDiv1.value;
+				if(str1==dlmm)
+				{
+					top1.innerHTML = "密码输入合法";
+				}
+				else
+				{
+					top1.innerHTML = "密码输入不合法";
+				}
+			}
+			//身份证号
+			
+			
+			var oDiv3 = document.getElementById("sfzh");			
+			var oLabel3 = oDiv3.getElementsByTagName("label")[0];
+			var oInput3 = oDiv3.getElementsByTagName("input")[0];
+	
+			// oninput 是当输入框里面的值发生改变，就会触发
+			oInput3.oninput = function() 
+			{
+				
+				// 取出输入框的值
+				var str = this.value;
+				
+				var reg = /^[1-9]\d{16}(\d|X)$/;
+				//reg.test 验证这个字符串 str 是否满足正则表达式的要求
+				if(reg.test(str))
+				{
+					top1.innerHTML = "身份证号输入合法";
+				}
+				else
+				{
+					top1.innerHTML = "身份证号输入不合法";
+				}
+			}
+			//中奖号码
+			var oDiv4 = document.getElementById("zjhm");			
+			var oLabel4 = oDiv4.getElementsByTagName("label")[0];
+			var oInput4 = oDiv4.getElementsByTagName("input")[0];
+	
+			// oninput 是当输入框里面的值发生改变，就会触发
+			oInput4.oninput = function() 
+			{
+				
+				// 取出输入框的值
+				var str = this.value;
+				
+				var reg = /^1[35678]\d{9}$/;
+				//reg.test 验证这个字符串 str 是否满足正则表达式的要求
+				if(reg.test(str))
+				{
+					top1.innerHTML = "手机号输入合法";
+				}
+				else
+				{
+					top1.innerHTML = "手机号输入不合法";
+				}
+			}
+			
+			//产生验证码
+			var yam=document.getElementById('yzm');
+			var sjs=Math.floor(Math.random()*10000+1000);
+			yzm.innerHTML=sjs;
+			
+			var oDiv5 = document.getElementById("sryzm");			
+			var oLabel5 = oDiv5.getElementsByTagName("label")[0];
+			var oInput5 = oDiv5.getElementsByTagName("input")[0];
+	
+			// oninput 是当输入框里面的值发生改变，就会触发
+			oInput5.oninput = function() 
+			{
+				
+				// 取出输入框的值
+				var str = this.value;
+				if(yzm.innerHTML==str)
+				{
+					top1.innerHTML = "验证码输入合法";
+				}
+				else
+				{
+					top1.innerHTML = "验证码输入不合法";
+				}
+			}
+			
+			//七天之内免费登录
+			var str = document.cookie;
+			var obj = {};			
+			var arr = str.split("; ");
+			for (var i = 0; i < arr.length; i++)
+			{
+				var arr2 = arr[i].split("=");		
+				var name = arr2[0];
+				var val = arr2[1];		
+				// 在obj对象中添加了一个属性为 name 变量的值，然后这个属性的值是 val
+				obj[name] = val;
+			}
+			if (obj.username && obj.password)
+			{
+				oDiv.value = obj.username;
+				oDiv1.value = obj.password;
+				
+				alert("登录成功！");
+			}	
+			var btnLogin=document.getElementById('btnLogin');
+			var savePwd=document.getElementById("savePwd")
+			btnLogin.onclick = function() 
+			{
+
+				// oCheck.checked 为 true，那么就勾选了，否则就没勾选
+				if (savePwd.checked)
+				{
+		
+					// 勾选了，才保存 cookie
+					// alert(oPassword.value);
+					// 取出用户名和密码
+					var strUsername = oDiv.value;
+					var strPassword = oDiv1.value;	
+					// 保存到cookie 中
+					var oDate = new Date();		
+					// 得到7天后的日期对象
+					oDate.setDate(oDate.getDate() + 7);		
+					document.cookie = "username="+strUsername+";expires=" + oDate;		
+					document.cookie = "password="+strPassword+";expires=" + oDate;
+				}
+			}
+			
+			
+			
+		}
+		
+	</script>
+	
+	
+	
+	
+	
+	
+	</head>
+	<body>
+		<div id="zong">
+		<span id="top"></span>
+		<h2>账户详细资料</h2>
+
+	<div id="yhm"> <label> 用户名&nbsp;&nbsp;&nbsp;</label> <input type="text" /> <span>  </span></div>
+	<div id="dlmm"> <label> 登录密码&nbsp;&nbsp;</label> <input type="password" /> <span>  </span></div>
+	<div id="zfdlmm"> <label> 重复登录密码</label> <input type="password" /> <span>  </span></div>
+	<div id="dzyx"> <label> 密码安全级别</label>  <span id="di"></span><span id="zhong"></span><span id="gao"></span></div>
+	
+	<h2>个人信息资料</h2>
+	<div id="sfzh"> <label> 身份证号&nbsp;&nbsp;</label> <input type="text" /> <span>  </span></div>
+	<div id="zjhm"> <label> 中奖通知手机</label> <input type="text" /> <span>  </span></div>
+
+	<div id="sryzm"> <label> 验证码&nbsp;&nbsp;&nbsp;</label> <input type="text"  style="width: 50px; height: 20px;"/> <span id="yzm">  </span></div>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<input id="savePwd" type="checkbox" class="checkbox" />
+	
+	<label>7天内免登陆</label>	
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<input type="button" value="确定" id="btnLogin" />
+
+</div>
+	
+	
+	</body>
+</html>

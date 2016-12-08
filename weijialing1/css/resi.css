@@ -1,0 +1,87 @@
+/*commone*/
+*{margin: 0; padding: 0;}
+ul li{list-style: none;font-size: 12px;}
+a:link{text-decoration: none;}
+label{font-size: 12px;}
+/*头部信息*/
+.page_top{width:100%;margin:0 auto;height:30px;border-bottom:1px solid #eee;background:#fff;}
+.page_top a{color:#868686;}
+/*头部的大块*/
+.page_top_wid{width:950px;margin:0 auto;}
+/*头部左边的内容*/
+.page_top_text{float:left; line-height:30px;}
+/*头部右边的内容*/
+.page_item_list{float:right;margin-top:1px;}
+/*每个li*/
+.page_item_list li{float:left;position:relative;padding-top:5px; _display:inline; height:25px;padding-left:8px;padding-right:10px;}
+/*前两个li*/
+/*.page_item_list_li_bg{right 8px no-repeat;}*/
+/*li里的购物车超链接*/
+.page_item_list li.last a{background:none;margin-right:0;}
+.page_item_list .page_item_list_sub span{width:86px;display:block;height:20px;}
+
+
+/*第二大块*/
+.search-box{width:950px;height:80px;margin:0 auto;position:relative;z-index:100000;}
+/*左边模块*/
+.index-logo{height:80px;width:280px;float:left;position:relative;}
+.index-logo .logo{width:128px;float:left;margin:13px 0px 0 5px; _display:inline;}
+.index-logo .logobanner{display:inline-block;width:108px;margin:18px 0 0 8px;float:left; font-family:"微软雅黑";font-size:24px;color:#999;}
+/*右边模块*/
+.search-box .search-sign{ width:200px; float:right; margin-top:38px; font-size: 12px;}
+.c-999{color:#999;}
+
+
+/*第三块*/
+.join-left-bord {width:755px;_width:720px;float:left;padding:0 15px 24px 15px;border:1px solid #dfdfdf;color:#666;}
+.join-left-bord h2{margin:-26px 0 0 30px; position:absolute;z-index:100;}
+/*第三块的第二个div内容*/
+.join-two-bord {padding-top:24px;height:447px;}
+/*第三个的第二个div内容*/
+.join-info {width:760px;_width:700px;float:left;}
+/*第三块的头部*/
+.container {margin-right: auto;margin-left: auto;width: 950px;}
+.join-tit-bord {width:950px; overflow:hidden;height:65px;}
+.join-process-bord {padding:0 100px;_padding:0 65px;height:40px; margin-top:15px;position:relative;border-bottom:2px solid #ddd;}
+.join-process-bord ul li {height:40px;width:160px;margin-right:85px;font-size:18px; font-family:"微软雅黑";display:inline-block;float:left;margin-bottom:-2px; text-align:center;color:#999;}
+.join-process-bord ul li.yes {border-bottom:2px solid #f60;color:#444;}
+.join-process-bord ul li i {display:inline-block;height:24px;width:24px;margin-right:3px;text-align:center;line-height:24px;font-size:16px;}
+.join-process-bord ul li i.yes{background-position:-24px 0px;}
+.join-process-bord ul li i.no {background-position:0px 0px;}
+/*设置lable的位置*/
+.form-group .lable-only,.form-group .vhas-err,.form-group .vhas-text{display:inline-block;height:34px;_height:24px;font-size:12px;line-height: 1.428571429;vertical-align: middle;}
+.form-group .lable-only {display:inline-block;width:120px;padding:6px 3px 6px 0;margin-right:5px;text-align:right;} /* label 标题定义*/
+.form-group .lable-onlysort {display:inline-block;width:90px;padding:6px 3px 6px 0;margin-right:5px;text-align:right;color:#999;} 
+.form-group .lable-only em {font-family:simsun;color:#f00;}
+
+/*填写手机*/
+.form-group .lable-countries {display:inline-block; position:absolute;z-index:22;width:16px;height:12px;margin-top:17px;_margin-top:13px;margin-left:-231px;_margin-left:-278px;}
+/*获取验证码*/
+.form-group .lable-yzm {display:inline-block; position:absolute;z-index:22;width:96px;height:26px;line-height:26px;border-radius:4px;margin-top:10px;_margin-top:6px;margin-left:-101px;_margin-left:-101px;background-color:#f60;text-align:center;color:#fff; cursor:pointer;}
+/*以下四个自己定义*/
+.form-group .lable-yzmsq {display:inline-block; position:absolute;z-index:22;width:96px;height:26px;line-height:26px;border-radius:4px;margin-top:10px;margin-left:-101px;background-color:#ccc;text-align:center;color:#fff;}
+.form-inline .join_box_err {display:inline;padding-left:24px;color:#f00;}
+.form-inline .join_box_caution{display:inline-block;padding-left:24px;color:#999;}
+.form-inline .join_box_sub {}
+.form-group .form-inline {display:inline-block;width:100%;height:42px;line-height:42px; clear:both;margin-bottom:10px;}/*表单列表单行定义*/
+.form-group .form-inline-textarea {display:inline-block;width:100%;padding:8px 0;clear:both;}/*表单列表单行定义*/
+/*注册*/
+.input-sort180 {width:180px;padding-left:8px;outline:none;}
+.input-sort {width:240px;padding-left:8px;outline:none;}
+.btn-y-b,.btn-y-m,.btn-y-s{background-color:#f60;color:#fff;font-weight:bold;border:0;}
+.btn-y-b,.btn-b-b,.btn-g-b,.btn-r-b{line-height:35px;height:35px;padding: 0 20px;_padding: 0 10px;font-size:18px;border-radius:4px;}
+.btn-y-b:hover,.btn-y-m:hover,.btn-y-s:hover{cursor:pointer;background-color: #ff7519;}
+
+/*模块右边部分*/
+.join-right-bord {width:154px;_width:157px;float:right;padding:0px 3px 15px 3px;height:473px;_height:480px;line-height:23px;border-right:1px solid #dfdfdf;border-bottom:1px solid #dfdfdf;border-top:1px solid}
+.join-left-bord h2,.join-right-bord h2 {margin:-26px 0 0 30px; position:absolute;z-index:100;}
+.join-right-bord span {display:block;width:102px;height:28px;line-height:28px;text-align:center;margin:auto;}
+.maket-user {padding:15px 0;margin-bottom:15px;border-bottom:1px dashed #dfdfdf;}
+.join-right-bord span a {color:#666;}
+.f14{font-size:14px;}
+.c-yellow{color:#f60;}
+.c-yellow a:link,.c-yellow a:visited{color:#f60;text-decoration:none;}
+.c-yellow a:hover{color:#f60;text-decoration:underline;}
+.c-yellow a{color:#f50;}
+.mt15{margin-top:15px;}
+

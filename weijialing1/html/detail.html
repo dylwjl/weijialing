@@ -1,0 +1,1005 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="../css/detail.css" />
+		<script type="text/javascript" src="../js/jquery-2.1.1.min.js" ></script>
+		<script src="../js/addsomethingcookie.js"></script>
+	</head>
+	<body>
+			<!--顶部-->
+	<div class="index_top">
+		<!--有一个大的div-->
+		<div class="index_topin">
+			<!--大的div里有两个div-->
+	        <div class="index_top_right">
+	        	<ul>
+	        	    <li id="credit_select" style="display: none;">
+						<span>我的积分:<span id="credit_num" onclick="#'"></span>
+						</span><span id="sign_class" class="sign-no">签到</span><span class="top-sign">|</span>
+					</li>
+	        		<li id="shopingcart">
+						<span class="buy-car">
+						<a href="/neworder/orderCartConfirm.html" rel="nofollow">购物车</a>
+						</span><span class="top-sign">|</span>
+					</li>
+	        		<li>
+						<span class="sp-left" id="usercenter">
+						   <a href="http://work.yiwugou.com/index.htm" rel="nofollow">用户中心</a>
+						</span><span class="top-sign">|</span>
+					</li>
+	        		<li class="khfuwu">
+	        		    <a href="/help/index.html" rel="nofollow">客户服务</a><span class="top-sign">|</span>
+	        		    <span class="khhover">客户服务<i></i></span>
+						<div class="khfw_xl">
+							<p class="khfw_bbfk">
+							 <a href="/help/index.html">帮助中心</a>
+							 <a href="//bbs.yiwugou.com/thread-573-1-1.html">意见反馈</a>
+							</p>
+							<p class="kf_time">
+							0579-81530000<br>
+							(08:30-22:00)
+							</p>
+							<p class="kf_email">kefu@yiwugou.com</p>
+						</div>
+	        		</li>
+	        		<li class="index_languagelist">
+						<div><span>中 文</span></div>
+						<ul style="display: none;">
+							<li><a href="#" target="_top">English</a></li>
+							<li><a href="#" target="_top">Russian</a></li>
+							<li><a href="#" target="_top">Arabic</a></li>
+							<li><a href="#" target="_top">Spanish</a></li>
+							<li><a href="#" target="_top">French</a></li>
+						</ul>
+	        		</li>
+	            </ul>
+	        </div>
+			<div class="index_top_left">
+		    	<span class="top_mob"><a href="#">手机版</a></span>
+				<span class="top-sign">|</span>
+				<a href="#" rel="nofollow">市场信用</a>
+				<span class="top-sign">|</span>
+	   			<span id="w-city">义乌</span>
+	   			<span id="w-img"><img src="img/Connect_logo_1.png" height="16"></span>
+	   			<span id="w-wind"></span>
+	   			<span id="w-temperature">15 ~ 6℃</span>
+	    	</div>
+		     <!--<input type="hidden" id="rootPath" value="">
+		     <input type="hidden" id="imagespath" value="http://images.onccc.com/link2pic2/images/yiwugou/www/images/">
+		     <input type="hidden" id="mapPath" value="http://images.onccc.com/">
+		     <input type="hidden" id="workPath" value="http://work.yiwugou.com">-->
+    	</div>
+</div>
+<!--搜索状态，一共分为三大模块，一个是图片+搜索+登录注册模块-->
+<div class="search-part">
+	<!--search-partleft一共分为earch-logo+station-->
+   	<div class="search-partleft">
+   		
+	    <div class="search-logo">
+	      <a href="#" title="义乌购首页" target="_self" rel="nofollow">
+	        <img src="img/logo2.jpg" width="121" height="54">
+	      </a>
+		</div>
+		<!--station分为span+index-station-bord-->
+   		<div class="station">
+	        <span class="stationspan">分站</span>
+		    <div class="index-station-bord" style="display: none;">
+				<ul>
+					<h5>全国专业市场</h5>
+					<li>
+					<p>
+					<span><a href="#" target="_blank" rel="nofollow">新疆</a></span>
+					<span><a href="#" target="_blank" rel="nofollow">大同</a></span>
+					<span><a href="#" target="_blank" rel="nofollow">金桥</a></span>
+					<span><a href="#" target="_blank" rel="nofollow">遵义</a></span>
+					<span><a href="#" target="_blank" rel="nofollow">速联</a></span>
+					</p>
+					<p>
+					<span><a href="#" target="_blank" rel="nofollow">梁山</a></span>
+					<span><a href="#" target="_blank" rel="nofollow">枣庄</a></span>
+					<span><a href="#" target="_blank" rel="nofollow">泰东</a></span>
+					<span><a href="#" target="_blank" rel="nofollow">湘潭</a></span>
+					<span><a href="#" target="_blank" rel="nofollow">庆云</a></span>
+					</p>
+					<p>
+					<span><a href="#" target="_blank" rel="nofollow">莱阳</a></span>
+					<span><a href="#" target="_blank" rel="nofollow">金田</a></span>
+					<span><a href="#" target="_blank" rel="nofollow">安阳</a></span>
+					<span><a href="#" target="_blank" rel="nofollow">承德</a></span>
+					<span><a href="#" target="_blank" rel="nofollow">龙水</a></span>
+					</p>
+					<p>
+					<span><a href="#" target="_blank" rel="nofollow">三条</a></span>
+					<span><a href="#" target="_blank" rel="nofollow">内蒙</a></span>
+					<span><a href="#" target="_blank" rel="nofollow">房山</a></span>
+					<span><a href="#" target="_blank" rel="nofollow">亿都</a></span>
+					<span><a href="#" target="_blank">兰州</a></span>
+					</p>
+					<p>
+					<span><a href="#" target="_blank" rel="nofollow">广元</a></span>
+					<span><a href="#" target="_blank" rel="nofollow">苏州</a></span>
+					<span><a href="#" target="_blank" rel="nofollow">南宁</a></span>
+					<span><a href="#" target="_blank" rel="nofollow">赣南</a></span>
+					<span><a href="#" target="_blank" rel="nofollow">和道</a></span>	
+					</p>
+					<p>
+					<span><a href="#" target="_blank">海城</a></span>
+					</p>
+					</li>
+				</ul>
+				<ul>
+					<h5>海外市场</h5>
+					<li>
+						
+						 <em><i class="ico-country1"></i><a href="#" target="_blank" rel="nofollow">Japan</a></em>
+						 <em><i class="ico-country2"></i><a href="#" target="_blank" rel="nofollow">Russian</a></em>
+						 <em><i class="ico-country3"></i><a href="#" target="_blank" rel="nofollow">Korea</a></em>
+						 <em><i class="ico-country4"></i><a href="#" target="_blank" rel="nofollow">Spain</a></em>
+						 <em><i class="ico-country5"></i><a href="#" target="_blank" rel="nofollow">Italy</a></em>
+						 <em><i class="ico-country6"></i><a href="#" target="_blank" rel="nofollow">Mexico</a></em>
+						 <em><i class="ico-country7"></i><a href="#" target="_blank" rel="nofollow">Morocco</a></em>
+					
+					 </li>
+				</ul>
+			</div>
+  		</div>
+   </div>
+   <!--分为from表单+img-search-bord-->
+   <div class="search-input">
+       <form name="forms" id="searchform" method="get" target="_self" action="/search/s.html">
+	        <!--搜索第一个部分-->
+	        <div class="search-index">
+		        <div class="search-icon">
+			       <i class=""></i>
+				    <div class="search-leibie" style="display: none;">
+						<p class="search-top"></p>
+						< ul id="searchSort">
+							<li data-url="/search/s.html">搜全部</li>
+							<li data-url="/search/sproduct.html">搜商品</li>
+							<li data-url="/search/sshop.html">搜商铺</li>
+						</ul>
+        			</div>
+			    </div>
+			   <input name="q" id="inputkey" class="input-pro-shop" type="text" autocomplete="off" onkeypress="searchEnter();" value="">
+		       <span class="ico-img-search" title="点击上传图片就可以搜索啦"></span>
+		       <span class="search-button" onclick="searchCharacterFilter();">搜索</span>
+			</div>
+			<!--搜索第二部分-->
+		    <div class="ac_results" style="display: none;">
+		    </div>
+		    <!--搜索第三部分-->
+		    <div class="suggest_default_ctn" style="display: none;">
+				 <p class="history_title">您最近搜过</p>
+				 <div class="history_body"></div>
+		    </div>  
+	   </form>
+	   <!--图片搜索-->
+	   <!--<div class="img-search-bord">
+			<span class="img-close"></span>
+			<div class="clr"></div>
+			<input name="url" id="inputimgsearch" class="input-pro-shop" type="text" value="" placeholder="在此粘贴图片链接搜索">
+			<span class="search-button" id="imgsearchbutton">图片搜索</span>
+			<div class="clr"></div>
+			<span class="btn-img-bord">
+				<span id="img-btn" class="img-btn" style="position: relative; overflow: hidden;"><input type="file" name="file" style="position: absolute; right: 0px; top: 0px; font-family: Arial; margin: 0px; padding: 0px; cursor: pointer; opacity: 0;"></span>
+			</span>
+	    </div>-->
+   </div>
+    <!--第二部分的注册登录-->
+    <div class="search-sign">
+    	<!--1-->
+	    <span id="login_ul">
+	    	<span class="search-login">
+	        	<a href="#" target="_self" id="userSignIn" rel="nofollow">
+	            	<span class="ico"></span>
+	            	<span class="sp-left">登录</span>
+	        	</a>
+	        	<span class="top-sign">|</span>
+	    	</span>
+	        <span class="search-signx c-ylink"><a href="#" id="userjoin" rel="nofollow">注册</a></span>
+	    </span>
+	    <!--2-->
+        <span class="pl5" style="display:none" id="logout_ul">
+            <span class="seqrch-signok">
+                <a href="#">
+	                <span class="ico"></span>
+	                <span class="sp-left">
+		                <span class="pointer" id="ajaxnick"></span>
+	                </span>
+                 </a>
+            </span>
+            <span class="c-ylink f14px">, <a href="#" target="_self" id="userSignOut">退出</a></span>
+        </span>
+        <!--3-->
+		<div class="seqrch-phb"><a href="#" rel="nofollow"><span class="ico"></span><span class="sp-left">排行榜</span></a></div>
+    </div>
+   <!--<div class="clr"></div>-->
+</div>
+
+
+<!--导航页-->
+<div class="index-nav-box">
+	<div class="index-nav">
+		<ul>
+			<li class="nav-index-yes"><a href="#" target="_self">首页</a></li>
+			<li id="nav-class" class="nav-index-pro"><a href="#" target="_self" class="spsp">商铺商品</a><i></i>
+				<div class="nav-class-bord" style="display: none;">
+					<ul>
+						<li>
+							<div class="market-pb">
+							<div class="market-qukuai">
+								<p><span>&gt;</span><a href="#">义乌国际商贸城一区</a></p> <a href="#">玩具</a><a href="#">珠宝首饰</a><a href="#">仿真花</a><a href="#">装饰工艺</a><a href="#">相框</a>
+							</div>
+							</div>
+							<div class="nav-erji-bord" style="display: none;">
+								<div class="louc">
+									<h2>一层</h2>
+									<a href="#" target="_self">玩具</a>
+									<a href="#" target="_self">花类（仿真花）</a>
+									<a href="#" target="_self">花类配件</a>
+									<a href="#" target="_self">东辅房（玩具/饰品）</a>
+									<div class="clr"></div>
+								</div>
+								<div class="louc">
+									<h2>二层</h2>
+									<a href="#" target="_self">头饰</a>
+									<a href="#" target="_self">珠宝首饰</a>
+									<a href="#" target="_self">东辅房（饰品）</a>
+									<div class="clr"></div>
+								</div>
+								<div class="louc">
+									<h2>三层</h2>
+									<a href="#" target="_self">喜庆工艺/圣诞用品</a>
+									<a href="#" target="_self">装饰工艺</a>
+									<a href="#" target="_self">旅游工艺</a>
+									<a href="#" target="_self">瓷器水晶</a>
+									<a href="#" target="_self">相框</a>
+									<a href="#" target="_self">饰品配件</a>
+									<a href="#" target="_self">东辅房（饰品及饰品配件·工艺品）</a>
+									<div class="clr"></div>
+								</div>
+								<div class="louc noline">
+									<h2>四层</h2>
+									<a href="#" target="_self">台商馆(花类·饰品·工艺品)</a>
+									<a href="#" target="_self">生产企业直销中心(珠宝首饰·工艺品)</a>
+									<div class="clr"></div>
+								</div>
+							</div></li>
+						<li>
+							<div class="market-pb">
+							<div class="market-qukuai">
+								<p><span>&gt;</span><a href="#">义乌国际商贸城一区东</a></p>
+								<a href="#">饰品配件</a>
+								<a href="#">饰品</a>
+							</div>
+							</div>
+							<div class="nav-erji-bord" style="display: none;">
+								<div class="louc">
+									<h2>一层</h2>
+									<a href="#" target="_self">饰品配件</a>
+									<div class="clr"></div>
+								</div>
+								<div class="louc">
+									<h2>二层</h2>
+									<a href="#" target="_self">饰品</a>
+									<a href="#" target="_self">饰品配件</a>
+									<div class="clr"></div>
+								</div>
+								<div class="louc">
+									<h2>三层</h2>
+									<a href="#" target="_self">饰品</a>
+									<div class="clr"></div>
+								</div>
+							</div></li>
+						<li>
+							<div class="market-pb">
+							<div class="market-qukuai">
+								<p><span>&gt;</span>
+									<a href="#">义乌国际商贸城二区</a>
+								</p>
+								<a href="#"><span>伞具</span></a>
+								<a href="#">
+									<span>箱包</span>
+								</a>
+								<a href="#">
+									<span>五金工具</span>
+								</a><a href="#">
+									<span>钟表</span>
+								</a>
+								<a href="#">
+									<span>小家电</span>
+								</a>
+								<a href="#">
+									<span>电子仪器</span>
+								</a>
+							</div>
+							</div>
+							<div class="nav-erji-bord" style="display: none;">
+								<div class="louc">
+									<h2>一层</h2>
+									<a href="#" target="_self">雨披/包装袋</a>
+									<a href="#" target="_self">伞具</a>
+									<a href="#" target="_self">箱包</a>
+									<div class="clr"></div>
+								</div>
+								<div class="louc">
+									<h2>二层</h2>
+									<a href="#" target="_self">电工产品</a>
+									<a href="#" target="_self">锁具</a>
+									<a href="#" target="_self">五金工具/配件</a>
+									<a href="#" target="_self">自行车/童车</a>
+									<div class="clr"></div>
+								</div>
+								<div class="louc">
+									<h2>三层</h2>
+									<a href="#" target="_self">五金厨卫</a>
+									<a href="#" target="_self">小家电</a>
+									<a href="#" target="_self">广东南海馆</a>
+									<a href="#" target="_self">电讯器材</a>
+									<a href="#" target="_self">电子仪器/照相器材</a>
+									<a href="#" target="_self">电池/灯/电筒(电子)</a>
+									<a href="#" target="_self">钟表</a>
+									<div class="clr"></div>
+								</div>
+								<div class="louc">
+									<h2>四层</h2>
+									<a href="#" target="_self">安徽馆</a>
+									<a href="#" target="_self">乐清馆</a>
+									<a href="#" target="_self">香港馆</a>
+									<a href="#" target="_self">四川馆</a>
+									<a href="#" target="_self">韩国馆</a>
+									<a href="#" target="_self">箱包</a>
+									<a href="#" target="_self">电子</a>
+									<a href="#" target="_self">钟表</a>
+									<a href="#" target="_self">五金电器</a>
+									<div class="clr"></div>
+								</div>
+								<div class="louc noline">
+									<h2>五层</h2>
+									<a href="#" target="_self">外贸机构</a>
+									<a href="#" target="_self">特色商品</a>
+									<div class="clr"></div>
+								</div>
+							</div></li>
+						<li>
+							<div class="market-pb">
+							<div class="market-qukuai">
+								<p><span>&gt;</span>
+									<a href="#">义乌国际商贸城三区</a>
+								</p> 
+								<a href="#"><span>化妆品</span></a>
+								<a href="#"><span>辅料配件</span></a>
+								<a href="#"><span>办公学习</span></a>
+								<a href="#"><span>文化体育</span></a>
+								<a href="#"><span> 眼镜</span></a>
+							</div>
+							</div>
+							<div class="nav-erji-bord">
+								<div class="louc">
+									<h2>地下一层</h2>
+									<a href="#" target="_self">年画挂历对联</a>
+									<div class="clr"></div>
+								</div>
+								<div class="louc">
+									<h2>一层</h2>
+									<a href="#" target="_self">笔墨纸制品</a>
+									<a href="#" target="_self">眼镜</a>
+									<div class="clr"></div>
+								</div>
+								<div class="louc">
+									<h2>二层</h2>
+									<a href="#" target="_self">办公学习用品</a>
+									<a href="#" target="_self">文化体育用品</a>
+									<a href="#" target="_self">体育休闲</a>
+									<div class="clr"></div>
+								</div>
+								<div class="louc">
+									<h2>三层</h2>
+									<a href="#" target="_self">化妆品</a>
+									<a href="#" target="_self">化妆品配件</a>
+									<a href="#" target="_self">美容美发用品</a>
+									<a href="#" target="_self">镜梳</a>
+									<a href="#" target="_self">纽扣/拉链</a>
+									<a href="#" target="_self">辅料配件</a>
+									<a href="#" target="_self">服装辅料</a>
+									<div class="clr"></div>
+								</div>
+								<div class="louc">
+									<h2>四层</h2>
+									<a href="#" target="_self">生产企业直销中心-化妆品/美容美发</a>
+									<a href="#" target="_self">生产企业-文化体育/户外用品</a>
+									<a href="#" target="_self">生产企业直销中心-服装辅料</a>
+									<div class="clr"></div>
+								</div>
+								<div class="louc noline">
+									<h2>五层</h2>
+									<a href="#" target="_self">装饰画、装饰画配件及加工机械</a>
+									<div class="clr"></div>
+								</div>
+							</div></li>
+						<li>
+								<div class="market-pb">
+									<div class="market-qukuai">
+									<p><span>&gt;</span>
+										<a href="#">义乌国际商贸城四区</a>
+									</p> <a href="#"><span>袜类</span></a>
+									<a href="#"><span>日用百货</span></a>
+									<a href="#"><span> 鞋类</span></a>
+									<a href="#"><span>线带</span></a>
+									<a href="#"><span>内衣</span></a>
+									<a href="#"><span>皮带</span></a>
+									<a href="#"><span>围巾</span></a>
+									</div>
+								</div>
+							<div class="nav-erji-bord">
+								<div class="louc">
+									<h2>一层</h2>
+									<a href="#" target="_self">袜类/打底裤</a>
+									<div class="clr"></div>
+								</div>
+								<div class="louc">
+									<h2>二层</h2>
+									<a href="#" target="_self">针棉织品</a>
+									<a href="#" target="_self">帽子</a>
+									<a href="#" target="_self">耳罩</a>
+									<a href="#" target="_self">手套</a>
+									<a href="#" target="_self">日用百货</a>
+									<div class="clr"></div>
+								</div>
+								<div class="louc">
+									<h2>三层</h2>
+									<a href="#" target="_self">毛线</a>
+									<a href="#" target="_self">领带</a>
+									<a href="#" target="_self">花边</a>
+									<a href="#" target="_self">毛巾</a>
+									<a href="#" target="_self">线带</a>
+									<a href="#" target="_self">鞋类</a>
+									<div class="clr"></div>
+								</div>
+								<div class="louc">
+									<h2>四层</h2>
+									<a href="#" target="_self">皮带/配件</a>
+									<a href="#" target="_self">文胸内衣</a>
+									<a href="#" target="_self">围巾</a>
+									<div class="clr"></div>
+								</div>
+								<div class="louc noline">
+									<h2>五层</h2>
+									<a href="#" target="_self">旅游购物中心</a>
+									<a href="#" target="_self">服饰</a>
+									<a href="#" target="_self">鞋类</a>
+									<a href="#" target="_self">日用百货(潮州陶瓷)</a>
+									<a href="#" target="_self">相框/配件</a>
+									<a href="#" target="_self">画类</a>
+									<div class="clr"></div>
+								</div>
+							</div></li>
+						<li>
+							<div class="market-pb">
+								<div class="market-qukuai">
+									<p><span>&gt;</span>
+										<a href="#">义乌国际商贸城五区</a>
+									</p> <a href="#"><span>床上用品
+									</span></a>
+									<a href="#"><span>汽车用品</span></a>
+									<a href="#"><span>进口百货</span></a>
+									<a href="#"><span>针纺布类</span></a>
+								</div>
+							</div>
+							<div class="nav-erji-bord">
+								<div class="louc">
+									<h2>一层</h2>
+									<a href="#" target="_self">进口商品馆-食品保健品</a>
+									<a href="#" target="_self">进口商品馆-服装百货</a>
+									<a href="#" target="_self">进口商品馆-饰品工艺品</a>
+									<a href="#" target="_self">非洲产品展销中心</a>
+									<a href="#" target="_self">其他进口商品</a>
+									<div class="clr"></div>
+								</div>
+								<div class="louc">
+									<h2>二层</h2>
+									<a href="#" target="_self">床上用品</a>
+									<a href="#" target="_self">婚庆用品</a>
+									<a href="#" target="_self">DIY手工艺</a>
+									<div class="clr"></div>
+								</div>
+								<div class="louc">
+									<h2>三层</h2>
+									<a href="#" target="_self">窗帘布类</a>
+									<a href="#" target="_self">针纺布类</a>
+									<a href="#" target="_self">针织原料</a>
+									<div class="clr"></div>
+								</div>
+								<div class="louc">
+									<h2>四层</h2>
+									<a href="#" target="_self">汽车用品</a>
+									<a href="#" target="_self">汽摩配件</a>
+									<a href="#" target="_self">小商品配送</a>
+									<a href="#" target="_self">宠物（水族）用品</a>
+									<div class="clr"></div>
+								</div>
+								<div class="louc noline">
+									<h2>五层</h2>
+									<a href="#" target="_self">网商服务</a>
+									<a href="#" target="_self">虚拟商铺</a>
+									<a href="#" target="_self">合计划国内</a>
+									<a href="#" target="_self">合计划国外</a>
+									<a href="#" target="_self">B2R</a>
+									<a href="#" target="_self">展示中心</a>
+									<a href="#" target="_self">山东企业馆</a>
+									<div class="clr"></div>
+								</div>
+							</div></li>
+						<li>
+							<div class="market-pb">
+								<div class="market-qukuai">
+									<p><span>&gt;</span>
+										<a href="#">义乌篁园市场</a>
+									</p> <a href="#"><span>男装</span></a>
+									<a href="#"><span>女装</span></a>
+									<a href="#"><span>童装</span></a>
+									<a href="#"><span>睡衣</span></a>
+									<a href="#"><span>衬衫</span></a>
+									<a href="#"><span>裤</span></a>
+								</div>
+							</div>
+							<div class="nav-erji-bord">
+								<div class="louc">
+									<h2>一层</h2>
+									<a href="#" target="_self">裤</a>
+									<a href="#" target="_self">牛仔</a>
+									<div class="clr"></div>
+								</div>
+								<div class="louc">
+									<h2>二层</h2>
+									<a href="#" target="_self">男装</a>
+									<div class="clr"></div>
+								</div>
+								<div class="louc">
+									<h2>三层</h2>
+									<a href="#" target="_self">女装</a>
+									<div class="clr"></div>
+								</div>
+								<div class="louc">
+									<h2>四层</h2>
+									<a href="#" target="_self">睡衣</a>
+									<a href="#" target="_self">羊毛衫</a>
+									<a href="#" target="_self">运动服</a>
+									<a href="#" target="_self">衬衫及其他</a>
+									<div class="clr"></div>
+								</div>
+								<div class="louc noline">
+									<h2>五层</h2>
+									<a href="#" target="_self">童装</a>
+									<div class="clr"></div>
+								</div>
+							</div></li>
+						<li>
+								<div class="market-pb">
+									<div class="market-qukuai">
+									<p><span>&gt;</span>
+										<a href="#">国际生产资料市场</a>
+									</p>
+									<a href="#" target="_self">印刷原材料</a>
+									<a href="#" target="_self">工量刃具</a>
+									<a href="#" target="_self">家居装饰灯</a>
+									<a href="#" target="_self"><span>皮革</span></a>
+									</div>
+								</div>
+							<div class="nav-erji-bord">
+								<div class="louc">
+									<h2>一层</h2>
+									<a href="#" target="_self">印刷原材料</a>
+									<a href="#" target="_self">工业电器</a>
+									<a href="#" target="_self">仿真花</a>
+									<div class="clr"></div>
+								</div>
+								<div class="louc">
+									<h2>二层</h2>
+									<a href="#" target="_self">食品加工机械</a>
+									<a href="#" target="_self">印刷包装机械</a>
+									<a href="#" target="_self">动力和发电设备</a>
+									<a href="#" target="_self">织带机注塑机</a>
+									<a href="#" target="_self">工量刃具</a>
+									<div class="clr"></div>
+								</div>
+								<div class="louc">
+									<h2>三层</h2>
+									<a href="#" target="_self">家居装饰灯</a>
+									<a href="#" target="_self">商业照明设备</a>
+									<a href="#" target="_self">节日灯</a>
+									<a href="#" target="_self">户外工程灯</a>
+									<div class="clr"></div>
+								</div>
+								<div class="louc noline">
+									<h2>四层</h2>
+									<a href="#" target="_self"><span>皮革</span></a>
+									<div class="clr"></div>
+								</div>
+							</div></li>
+						<li>
+							<div class="market-pb">
+								<div class="market-qukuai">
+									<p><span>&gt;</span>
+										<a href="#">义乌副食品市场</a>
+									</p> <a href="#" target="_self"><span>国际馆</span></a>
+									<a href="#" target="_self"><span>台湾馆</span></a>
+									<a href="#" target="_self"><span>浙江馆</span></a>
+								</div>
+							</div>
+							<div class="nav-erji-bord">
+								<div class="louc">
+									<h2>一层</h2>
+									<a href="#">参茸等高档补品类</a> <a href="#">非定型包装干果、炒货类</a> <a href="/product_list/i_1_2002_1_10665.html">非定型包装糖类</a> <a href="/product_list/i_1_2002_1_10666.html">酒、饮料、水果罐头类</a> <a href="/product_list/i_1_2002_1_10667.html">其他副食类</a> <a href="/product_list/i_1_2002_1_10668.html">杂货类</a>
+									<div class="clr"></div>
+								</div>
+								<div class="louc">
+									<h2>二层</h2>
+									<a href="#">茶叶类</a> <a href="#">调味品、食用油类</a> <a href="/product_list/i_1_2002_2_10671.html">其他副食</a>
+									<div class="clr"></div>
+								</div>
+								<div class="louc noline">
+									<h2>三层</h2>
+									<a href="#" target="_self">国际馆</a>
+									<a href="#" target="_self">台湾馆</a>
+									<a href="#" target="_self">浙江馆</a>
+									<a href="#" target="_self">内蒙/东三省馆</a>
+									<a href="#" target="_self">新疆/陕西/宁夏/甘肃/青海馆</a>
+									<a href="#" target="_self">广东/广西/海南馆</a>
+									<a href="#" target="_self">四川/贵州/重庆/云南馆</a>
+									<a href="#" target="_self">京津/河北/山西/山东/河南馆</a>
+									<a href="#" target="_self">江西/福建/安徽/江苏/湖南/湖北馆</a>
+									<div class="clr"></div>
+								</div>
+							</div></li>
+						<li>
+							<div class="market-pb">
+								<div class="market-qukuai">
+									<p><span>&gt;</span>
+										<a href="#">义乌家具市场</a>
+									</p> <a href="#" target="_self"><span>红木家具</span></a>
+									<a href="#" target="_self"><span>实木家具</span></a>
+									<a href="#" target="_self"><span>国际家居名品馆</span></a>
+								</div>
+							</div>
+							<div class="nav-erji-bord">
+								<div class="louc">
+									<h2>地下一层</h2>
+									<a href="#" target="_self">办公和普通民用家具</a>
+									<div class="clr"></div>
+								</div>
+								<div class="louc">
+									<h2>一层</h2>
+									<a href="#" target="_self">沙发软体、五金玻璃、藤器</a>
+									<div class="clr"></div>
+								</div>
+								<div class="louc">
+									<h2>二层</h2>
+									<a href="#" target="_self">现代板式家具、儿童套房</a>
+									<div class="clr"></div>
+								</div>
+								<div class="louc">
+									<h2>三层</h2>
+									<a href="#" target="_self">红木家具</a>
+									<a href="#" target="_self">欧式古典家具</a>
+									<a href="#" target="_self">实木家具</a>
+									<div class="clr"></div>
+								</div>
+								<div class="louc">
+									<h2>四层</h2>
+									<a href="#" target="_self">国际家居名品馆</a>
+									<a href="#" target="_self">沙发软体、五金、藤器</a>
+									<div class="clr"></div>
+								</div>
+								<div class="louc noline">
+									<h2>五层</h2>
+									<a href="#" target="_self">橱柜、卫浴、壁纸</a>
+									<a href="#" target="_self">太阳能</a>
+									<a href="#" target="_self">装饰花卉、窗帘、陶瓷、户外家居、地毯</a>
+									<div class="clr"></div>
+								</div>
+							</div></li>
+						<li>
+							<div class="market-pb">
+								<div class="market-qukuai">
+									<p><span>&gt;</span>
+										<a href="#">义乌市物资市场</a>
+									</p> <a href="#" target="_self"><span>墙地砖</span></a>
+									<a href="#" target="_self"><span>水暖、卫浴</span></a>
+									<a href="#" target="_self"><span>马赛克</span></a>
+									<a href="#" target="_self"><span>玉石及雕件</span></a>
+								</div>
+							</div>
+							<div class="nav-erji-bord">
+								<div class="louc  noline">
+									<h2>一层</h2>
+									<a href="#" target="_self">墙地砖</a>
+									<a href="#" target="_self">水暖、卫浴</a>
+									<a href="#" target="_self">马赛克</a>
+									<a href="#" target="_self">铝型材</a>
+									<a href="#" target="_self">门窗</a>
+									<a href="#" target="_self">石材、玉石及雕件</a>
+									<a href="#" target="_self">玻璃</a>
+									<a href="#" target="_self">不锈钢</a>
+									<a href="#" target="_self">五金</a>
+									<a href="#" target="_self">灯具</a>
+									<a href="#" target="_self">墙纸、橱柜</a>
+									<div class="clr"></div>
+								</div>
+							</div></li>
+					</ul>
+				</div>
+			</li>
+			<li class="nav-index-no"><a href="#" target="_self">巨便宜</a></li>
+			<li class="nav-index-no"><a href="#" target="_self">论坛</a></li>
+		</ul>
+		<div class="nav-right">
+			<span>
+			  <a style="position:relative;padding-right:10px;" href="#" target="_self" rel="nofollow">
+			    众筹
+			    <i style="position:absolute;display:block;width:10px;height:10px;top:-8px;*top:8px;right:4px;background:url('//bbs.yiwugou.com/data/attachment/forum/201606/02/005558h2i4jew2wi3wes0w.gif') no-repeat;"></i>
+			  </a>
+			</span>
+			<span><a href="#" target="_blank" rel="nofollow">直通车</a></span>
+			<span><a href="#" target="_self" rel="nofollow">爱进口</a></span>
+			<span><a href="#" target="_self" rel="nofollow">招聘</a></span>
+			<span class="nav-expand">
+				<label class="nav-expand-i"><a href="#"> 采购 </a><i></i></label>
+				<ul>
+					<li><a href="#">阳光采购</a></li>
+				</ul>
+			</span>
+			<span><a href="#" target="_self">投诉处理</a></span>
+			<span><a href="#" target="_blank" rel="nofollow">经侦</a></span>
+			<span><a href="#" target="_self">转租转让</a></span>
+			<span><a href="#" rel="nofollow">展会</a></span>
+			<span><a href="" target="_blank">市场地图</a></span>
+			<span class="nav-expand">
+				<label class="nav-expand-i">外贸服务<i></i></label>
+				<ul>
+				    <li><a href="#" target="_blank" rel="nofollow">服务平台</a></li>
+					<li><a href="#.cn/" target="_blank" rel="nofollow">联网平台</a></li>
+					<li><a href="#">进出口公司</a></li>
+					<li><a href="#">翻译</a></li>
+					<li><a href="#">国际货运</a></li>
+				</ul>
+			</span>
+			<span class="nav-expand">
+				<label class="nav-expand-i"><a href="#">商铺服务</a><i></i></label>
+				<ul>
+					<li><a href="#">泊车位办理</a></li>
+					<li><a href="#">金融服务</a></li>
+					<li><a href="#">第三方服务</a></li>
+					<li><a href="#">商铺代运营</a></li>
+					<li><a href="#">义乌购执照</a></li>
+					<li><a href="#">全译通</a></li>
+					<li><a href="#">商标注册</a></li>
+					<li><a href="#">更多&gt;&gt;</a></li>
+				</ul>
+			</span>
+		</div>
+	</div>
+</div>
+
+<!--第二层内容-->
+
+
+
+
+<div id=frame style="width: 950px;">
+	<!--头部的-->
+	<div class="fontbluelink mt8px">
+		<span><a href="#">首页></a></span>
+		<span><a href="#">商铺商品></a></span>
+		<span><a href="#">义乌国际商贸城一区></a></span>
+		<span><a href="#">一楼></a></span>
+		<span><a href="#">仿真花></a></span>
+		<span><a href="#">义博人造花></a></span>
+	</div>
+	<!--左边的-->
+	<div class="view_tem_leftbord mt5px">
+		<!--商铺公告-->
+		<div class="mt8px">
+			<ul>
+				<li class="spgg1">商铺公告</li>
+				<li class="spgg2" style="font-size: 12px;">本店主要经营仿真花（PU仿真花/布艺花）、假花、婚庆花等，支持淘宝阿里巴巴供货，每款10枝起拿货，支持小额混批，微信号：15900650030！欢迎前来洽谈选购！</li>
+			</ul>
+		</div>
+		<div class="mt8px">
+			<ul>
+				<li class="spgg1">商铺公告</li>
+				<li><a href="#" style="font-size: 12px; font-weight: 700;">亿博人造花</a></li>
+				<li style="color: #666666; font-size: 12px; line-height: 23px;">商  位 号：0504A</li>
+				<li style="color: #666666; font-size: 12px;line-height: 23px;">商铺地址： 义乌国际商贸城一区2门1楼10街0504A</li>
+			</ul>
+		</div>
+		<div class="mt8px">
+			<ul>
+				<li class="spgg1">联系商家</li>
+				<li><a href="#">联  系 人：黄小燕</a></li>
+				<li>电      话：057985292184</li>
+				<li>手      机：13819953803</li>
+				<li>客    服1：<img src="img/Connect_logo_1.png" alt="点击这里给我发信息" title="点击这里给我发信息"></li>
+				<li>客    服2：<img src="img/Connect_logo_1.png" alt="点击这里给我发信息" title="点击这里给我发信息"></li>
+				<li>客    服3：<img src="img/Connect_logo_1.png" alt="点击这里给我发信息" title="点击这里给我发信息"></li>
+				<li>微    信：15900650030</li>
+				<li>商铺留言：点击留言</li>
+			</ul>		
+		</div>
+		<!--商铺推荐-->
+		<div class="mt8px">
+			<ul>
+				<li class="spgg1">商铺推荐</li>
+			</ul>
+			<div>
+				<ul class="view_product_one ">
+					<p><img src="img/madilian.jpg"></p>
+					<li>PU迷你马蹄莲，PU马蹄莲，仿真马蹄莲，手感马蹄莲</li>
+					<li>批发价请与商家联系</li>
+				</ul>
+				<ul class="view_product_one ">
+					<p><img src="img/madilian.jpg"></p>
+					<li>PU迷你马蹄莲，PU马蹄莲，仿真马蹄莲，手感马蹄莲</li>
+					<li>批发价请与商家联系</li>
+				</ul>
+				<ul class="view_product_one ">
+					<p><img src="img/madilian.jpg"></p>
+					<li>PU迷你马蹄莲，PU马蹄莲，仿真马蹄莲，手感马蹄莲</li>
+					<li>批发价请与商家联系</li>
+				</ul>
+				<ul class="view_product_one ">
+					<p><img src="img/madilian.jpg"></p>
+					<li>PU迷你马蹄莲，PU马蹄莲，仿真马蹄莲，手感马蹄莲</li>
+					<li>批发价请与商家联系</li>
+				</ul>
+				<ul class="view_product_one ">
+					<p><img src="img/madilian.jpg"></p>
+					<li>PU迷你马蹄莲，PU马蹄莲，仿真马蹄莲，手感马蹄莲</li>
+					<li>批发价请与商家联系</li>
+				</ul>
+			</div>
+			
+		</div>		
+	</div>
+	<!--右边的-->
+	<div class="view_tem_rightbord mt12px">
+		<!--头部-->
+		<div class="pro10_view_tit">
+			<ul>
+				<li class="font16px fontbold tit" id="hua">高档仿真花湘妃兰蜘蛛兰花束</li>
+				<li class="report fontbluelink"><a href="#">English|</a><a href="#">举报此商品</a></li>
+			</ul>
+		</div>
+		<!--一个商品的信息左边的-->
+		<div class="view_pro_con_text">
+			<p><img src="img/dahua1.png"></p>
+			<div class="view_img_bord">
+				<span>
+					<img src="img/xiaohua1.png">
+					<img src="img/xiaohua1.png">
+					<img src="img/xiaohua3.png">
+					<img src="img/xiaohua4.png">
+				</span>
+			</div>
+			<div class="ico_view_shouc">
+				<span>分享到朋友圈</span>
+				<span>加入收藏夹</span>
+			</div>
+		</div>
+		<!--一个商品的信息右边的-->
+		<div class="view_pro_con_about">
+			<!--第一部分-->
+			<ul>
+				<li class="pro-jianjie-bord">品牌:亿博	材质:布	工艺:手工加工定制:否	产品编号:0351	类型:花束包装:20束一盒 120束一件	是否专利货源:否	是否进口:否颜色:白色|深粉色|玫红|蓝色|黄色</li>
+				<li class="pro_price_boldda mt8">
+					<ul>
+						<li class="price-tit">
+							<span class="price-tit1">起批量(支)</span>
+							<span class="price-tit2">义乌价</span>
+						</li>
+						<li class="price-tit3">
+							<span class="price-tit1">≥240</span><span class="price-tit2">7.2/支</span>
+						</li>
+						<li class="price-tit3">
+							<span class="price-tit1">120—229</span><span class="price-tit2">7.60/支</span>
+						</li>
+						<li class="price-tit3">
+							<span class="price-tit1">20—119</span><span class="price-tit2">8.60/支</span>
+						</li>
+					</ul>
+				</li>
+				<li class="pro-attr-one">
+					<ul>
+						<li class="pro-attr-title">供货数量: 99999支</li>
+						<li class="pro-attr-title">运费:买家到付</li>
+					</ul>
+				</li>
+			</ul>
+			<!--第二部分添加购物-->
+			<div class="view_pro_pace">
+				<table width="100%" border="0" cellpadding="0" cellspacing="0">
+					<tr>
+						<td width="16%" height="20px"></td>
+						<td width="16%" align="center" style="font-size: 12px; color: #666;">数量</td>
+						<td width="6%">&nbsp;</td>
+						<td width="16%" align="center" style="font-size: 12px; color: #666;">单价</td>
+						<td width="6%"></td>
+						<td width="30%" align="center" style="font-size: 12px; color: #666;">合计（不含运费）</td>
+					</tr>
+					<tr>
+						<td style="font-weight: 700; text-align: right;">我要买</td>
+						<td width="6%" height="10px"><input type="text" style="width: 40px;" id="shuliang1"></td>
+						<td>*</td>
+						<td class="danjia1">7</td>
+						<td>=</td>
+						<td id="zongji1"></td>
+					</tr>
+				</table>
+				<div class="btn-pro-shop mt12px"><a href="#" id="jrgwc">加入购物车</a></div>
+			</div>
+			<!--尾部-->
+			<a href="#" style="font-size: 12px; color: #666">义本产品采购属于商业贸易行为。</a><br/>
+			<a href="#" style="display:inline-block;font-size: 12px; color:#464646 ;padding-top: 10px;">义乌购诚信交易保障体系,呵护每一笔交易安全</a>		
+		</div>
+		
+		
+		<!--右边下面的-->
+		<div class="pro_info_tab">
+			<span>详细信息</span>
+			<span>用户评价</span>
+			<span>交易记录</span>
+		</div>
+		<div class="pro_info_detail">
+			<div class="pro-par-bord">
+				<span>商品重量：0.03kg/支</span>
+			</div>
+			<div class="pro_info_text">
+				<table width="100%" border="0" cellpadding="0" cellspacing="0">
+					<tr>
+						<td width="33%" style="font-size: 14px; color: #444;">品牌:亿博</td>
+						<td width="33%" style="font-size: 14px; color: #444;">材质:布</td>
+						<td width="33%" style="font-size: 14px; color: #444;">工艺:手工</td>
+					</tr>
+					<tr>
+						<td width="33%" style="font-size: 14px; color: #444;">加工定制:否</td>
+						<td width="33%" style="font-size: 14px; color: #444;">产品编号:0351</td>
+						<td width="33%" style="font-size: 14px; color: #444;">类型:花束</td>
+					</tr>
+					<tr>
+						<td width="33%" style="font-size: 14px; color: #444;">包装:20束一盒 120束一件</td>
+						<td width="33%" style="font-size: 14px; color: #444;">是否专利货源:否</td>
+						<td width="33%" style="font-size: 14px; color: #444;">是否进口:否</td>
+					</tr>
+					<tr>
+						<td width="33%" style="font-size: 14px; color: #444;">颜色:白色|深粉色|玫红|蓝色|黄色</td>
+						
+					</tr>
+				</table>
+				<img src="img/jingpintuijian.jpg">
+				<p>品名：湘兰妃</p>
+				<p>箱规：20束一盒120束一件 20束韦单色的起批量！</p>
+				<p><img src="img/jingpintuijian2.jpg"></p>
+			</div>
+		</div>
+	
+	
+	
+	
+	</div>
+	
+	
+	
+</div>
+
+
+
+
+
+
+
+
+
+	</body>
+</html>

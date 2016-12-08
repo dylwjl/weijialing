@@ -1,0 +1,55 @@
+/*common*/
+
+
+h4,th,td,img,div{margin:0;padding:0;border:0; }
+a:link{text-decoration: none;}
+input{margin:0;padding:0;}
+c36c,a.c36c:link,a.c36c:visited{color:#36c !important;}
+.c666,a.c666:link,a.c666:visited{color:#666 !important;}
+input,select,textarea{font:12px/1.5 "Microsoft YaHei",tahoma,arial,"\5b8b\4f53",sans-serif;color:#333;}
+
+/*登录的头部*/
+.login_head{padding:10px 0 6px 0;border-bottom:3px solid #f60;}
+/*container也包含在尾部里*/
+.container{width:990px;margin:0 auto;position:relative;}
+.login_head_right{position:absolute;right:0;bottom:0px;}
+
+/*登录的右边的大模块*/
+.login_box{position:absolute;right:20px;top:60px;width:300px;height:330px;padding:5px;border:1px solid #d9d9d9;border-radius:3px;box-shadow:3px 3px 3px #d9d9d9;background-color:#fff;}
+.lb_b{padding:15px 30px 15px 15px;}
+.table_form{line-height:30px;}
+/*登录的右边的表单里的小模块*/
+.tr{text-align:right;}
+.table_form td{padding:10px 0 10px 10px;}
+
+.table_form td *{_vertical-align:middle;}
+.table_form td > *{vertical-align:middle;}
+.table_form th{text-align:right;font-weight:normal;vertical-align:middle;white-space:nowrap;padding:10px 0;font-size: 12px;}
+/*找回密码*/
+.lb_b_a_a{padding-top:0px !important;line-height:20px;}
+.lb_b_a_a_b{margin-left:2px;line-height:18px;}.tl{text-align:left;}
+.lb_b_a_a_a{position:relative;line-height:18px;margin-left:6px;}
+/*十天内免登陆*/
+.lb_b_a_a_a_a{line-height:13px;position:relative;z-index:1;}
+/*为了安全。。。*/
+.lb_b_a_a_a_b{display:none;position:absolute;background-color:#ffffd2;border:1px solid #f60;padding:5px;left:-6px;top:-6px;white-space:nowrap;padding-top:22px;}
+/*登录*/
+.input_button{display:inline-block;*display:inline;*zoom:1;padding:0 20px;*padding:0 10px;border-radius:4px;color:#fff;background-color:#eb4f38;border:1px solid #eb4f38;cursor:pointer;height:36px;overflow:hidden;outline:none;*vertical-align:middle;width:100%;}
+/*十天内免登陆+qq登录*/
+.ml10{font-size: 12px;}
+.vmiddle{vertical-align:middle !important}
+.vmiddle > *{vertical-align:middle}
+.left{float:left !important;}
+/*无快捷登录+找回密码+免费注册*/
+.right{float:right !important;}
+/*十天内免登陆+qq登录*/
+.vmiddle{vertical-align:middle !important}
+.vmiddle > *{vertical-align:middle}
+/*登录名框+密码名框*/
+.input_text{line-height:34px;height:34px;border:1px solid #d1d6e1;width:200px;padding-left:5px;border:1px solid #ccc;color:#333;background-color:#ffffe0;}
+
+
+
+
+
+

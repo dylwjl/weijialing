@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="../css/resig1.css" />
+		<script type="text/javascript" src="../js/resig.js" ></script>
+	</head>
+	<body>
+		<div class="page_top">
+		<div class="page_top_wid">
+	    	<div class="page_top_text">
+	    		<span class="ico_mob"><a href="#">手机版</a></span>
+	    		<span class="outer_sign">|</span>
+	    		<a href="#" rel="nofollow">Yiwubuy</a>
+	    		<span class="outer_sign">|</span>
+	    		<a href="#" rel="nofollow">市场信用</a>	    		
+	    	</div>
+	        <div class="page_item_list">
+	        	<ul class="logo_left">        	         		
+	        		<li id="shopingcart" class="page_item_list_li_bg">
+	        			<span class="buy-car"><a href="#" rel="nofollow">购物车</a></span>
+	        		</li>
+	        		<li class="page_item_list_li_bg">
+	        			<span class="sp-left" id="usercenter"><a href="#" rel="nofollow">用户中心</a></span>
+	        		</li>
+	        		<li>
+	        			<a href="#" rel="nofollow">帮助中心</a>	        			
+	        		</li>	
+	            </ul>
+	        </div>
+	     	<input type="hidden" id="rootPath" value="#">
+	    </div>
+	</div>
+	
+	
+	<!--第二块内容-->
+	<div class="search-box">
+		<!--共有两小块-->
+	    <div class="index-logo">
+	        <ul>
+	            <li class="logo">
+	            	<a href="#" title="义乌购首页" target="_self" rel="nofollow">
+	            		<img src='img/logo2.jpg' width="121" height="54">
+	            	</a>
+	            </li>
+	            <li class="logobanner">注册账号</li>
+	        </ul>
+	    </div> 
+	    <div class="search-sign c-999">
+	       	 如需帮助，请咨询：0579-81530000	
+	    </div>
+	</div>
+	
+	<!--第三块-->
+	<div class="container">
+		<!--第二块头部-->
+		<div class="join-tit-bord" style="height:85px;">
+	    	<div class="join-process-bord">
+	        	<ul>
+	            	<li><i class="no">1</i>注册账号</li>
+	                <li class="yes"><i class="yes">2</i>完善资料</li>
+	                <li><i class="no">3</i>进入义乌购</li>
+	            </ul>
+	        </div>
+	    </div>
+	    <!--第三块的右边-->
+	    <div class="join-guide-left">
+	    	<ul>
+	        	<li class="sup"><i></i>注册成功！</li>
+	        	<li class="account">请牢记您的账号 <span> 18878551892</span></li>
+	            <li class="hot">现在完善资料，立即享受最高</li>
+	            <li class="price"><img src="#" width="279" height="104"></li>
+	        </ul>
+	    </div>
+		<div class="join-guide-right">
+	            <div class="form-group">
+	                <ul>
+	                   <form id="infoForm" method="post" action="#" onsubmit="return false;" novalidate="novalidate">
+	                    <input type="hidden" name="done" value="#">
+	                    <input type="hidden" name="times" value="">
+	                    <li id="userNameborddiv" class="form-inline">
+	                        <label class="lable-onlysort">用户名：</label>
+	                        
+	                        
+	                        <input id="userName" name="userName" value="" class="form-control input-sort180" type="text">
+	                        
+	                        <span id="userNamediv" class="join_box_caution" style="display:none;">支持中英文、数字和下划线，由3-15个字符组成</span>
+	                        <span name="errorInfo"></span>
+	                    </li>
+	                    <li id="contactNameborddiv" class="form-inline">
+	                        <label class="lable-onlysort">姓名：</label>
+	                        <input id="contactName" name="contactName" class="form-control input-sort180" type="text">
+	                        <span id="contactNamediv" class="join_box_caution" style="display:none;">请放心，您的信息我们将严格保密</span>
+	                        <span name="errorInfo"></span>
+	                    </li>
+	                    <li id="sexborddiv" class="form-inline">
+	                        <label class="lable-onlysort">性别：  </label>
+	                        <input id="sex" name="sex" type="radio" value="0"> 男  &nbsp; &nbsp;  <input id="sex" name="sex" type="radio" value="1"> 女 
+	                        <span name="errorInfo"></span>
+	                    </li>
+	                    <li id="mobileborddiv" class="form-inline">
+	                        <label class="lable-onlysort">手机号码：  </label>
+	                        
+	                        
+	                        <input id="mobile" name="mobile" value="18878551892" type="hidden">18878551892
+	                        <span id="mobilediv" class="join_box_caution" style="display:none;">11位手机号码</span>
+	                        <span name="errorInfo"></span>
+	                    </li>
+	                    <li id="emailborddiv" class="form-inline">
+	                        <label class="lable-onlysort">邮箱：  </label>
+	                         
+	                          <input id="email" name="email" value="" class="form-control input-sort180" type="text">
+	                        
+	                        
+	                        <span id="emaildiv" class="join_box_caution" style="display:none;">如：ywgo@yiwugou.com</span>
+	                        <span name="errorInfo"></span>
+	                    </li>
+	                    <li id="industryIddiv" class="form-inline mt10" style="_zoom:1;">
+	                        <label class="lable-onlysort" style="vertical-align:top;margin-top:-13px;_float:left;">关注行业：  </label>
+	                       	<div class="pro-guide">
+		                       	
+						          <em><input id="industryId" name="industryId" type="checkbox" value="1"> 工艺品</em>
+						        
+						          <em><input id="industryId" name="industryId" type="checkbox" value="2"> 首饰</em>
+						        
+						          <em><input id="industryId" name="industryId" type="checkbox" value="3"> 玩具</em>
+						        
+						          <em><input id="industryId" name="industryId" type="checkbox" value="4"> 五金及电料</em>
+						        
+						          <em><input id="industryId" name="industryId" type="checkbox" value="5"> 电子电器</em>
+						        
+						          <em><input id="industryId" name="industryId" type="checkbox" value="6"> 钟表眼镜</em>
+						        
+						          <em><input id="industryId" name="industryId" type="checkbox" value="7"> 文化办公</em>
+						        
+						          <em><input id="industryId" name="industryId" type="checkbox" value="8"> 体育娱乐</em>
+						        
+						          <em><input id="industryId" name="industryId" type="checkbox" value="9"> 服装服饰</em>
+						        
+						          <em><input id="industryId" name="industryId" type="checkbox" value="10"> 鞋类</em>
+						        
+						          <em><input id="industryId" name="industryId" type="checkbox" value="11"> 针纺织品</em>
+						        
+						          <em><input id="industryId" name="industryId" type="checkbox" value="12"> 箱包</em>
+						        
+						          <em><input id="industryId" name="industryId" type="checkbox" value="13"> 化妆品及配件</em>
+						        
+						          <em><input id="industryId" name="industryId" type="checkbox" value="14"> 日用品</em>
+						        
+						          <em><input id="industryId" name="industryId" type="checkbox" value="15"> 辅料和包装</em>
+						        
+						          <em><input id="industryId" name="industryId" type="checkbox" value="0"> 其他</em>
+						        
+								<div class="clr"></div>
+		                        <span name="errorInfo"></span>
+	                        </div>
+	                    </li>
+	                    <li id="businessNatureborddiv" class="form-inline mt10">
+	                        <label class="lable-onlysort">业务性质：  </label>
+	                        
+					          <input id="businessNature" name="businessNature" type="radio" value="1"> 外贸公司
+					        
+					          <input id="businessNature" name="businessNature" type="radio" value="2"> 网商
+					        
+					          <input id="businessNature" name="businessNature" type="radio" value="3"> 实体店
+					        
+					          <input id="businessNature" name="businessNature" type="radio" value="4"> 批发商
+					        
+					          <input id="businessNature" name="businessNature" type="radio" value="5"> 连锁店
+					        
+					          <input id="businessNature" name="businessNature" type="radio" value="0"> 其他
+					        
+	                        <span name="errorInfo"></span>
+	                    </li>
+	                    <li id="stateborddiv" class="form-inline">
+	                        <label class="lable-onlysort">所在区域：  </label>
+	                        <select name="country" id="country">
+					          <option value="">国家</option>
+					          
+					          	<option value="8">中国</option>
+					          
+					          	<option value="10">美国</option>
+					          
+					          	<option value="2186">法国</option>
+					          
+					          	<option value="4208">阿富汗</option>
+					          
+					          	<option value="4209">阿尔巴尼亚</option>
+					          
+					          	<option value="4210">阿尔及利亚</option>
+					          
+					          	<option value="4211">美属萨摩亚</option>
+					          
+					          	<option value="4212">安道尔共和国</option>
+					          
+					          	<option value="4213">安哥拉</option>
+					          
+					          	<option value="4214">安奎拉岛</option>
+					          
+					          	<option value="4215">南极洲</option>
+					          
+					          	<option value="4216">安提瓜和巴布达</option>
+					          
+					          	<option value="4217">阿根廷</option>
+					          
+					          	<option value="4218">亚美尼亚</option>
+					          
+					          	<option value="4219">阿鲁巴岛</option>
+					          
+					          	<option value="4220">澳大利亚</option>
+					          
+					          	<option value="4221">奥地利</option>
+					          
+					          	<option value="4222">阿塞拜疆</option>
+					          
+					          	<option value="4223">巴哈马群岛</option>
+					          
+					          	<option value="4224">巴林</option>
+					          
+					          	<option value="4225">孟加拉国</option>
+					          
+					          	<option value="4226">巴巴多斯岛</option>
+					          
+					          	<option value="4227">白俄罗斯</option>
+					          
+					          	<option value="4228">比利时</option>
+					          
+					          	<option value="4229">伯利兹城</option>
+					          
+					          	<option value="4230">贝宁湾</option>
+					          
+					          	<option value="4231">百慕大群岛</option>
+					          
+					          	<option value="4232">不丹</option>
+					          
+					          	<option value="4233">玻利维亚</option>
+					          
+					          	<option value="4235">文莱达鲁萨兰国</option>
+					          
+					          	<option value="4236">保加利亚</option>
+					          
+					          	<option value="4237">布基纳法索</option>
+					          
+					          	<option value="4238">布隆迪</option>
+					          
+					          	<option value="4239">柬埔寨</option>
+					          
+					          	<option value="4240">喀麦隆</option>
+					          
+					          	<option value="4241">加拿大</option>
+					          
+					          	<option value="4242">佛得角</option>
+					          
+					          	<option value="4243">开曼群岛</option>
+					          
+					          	<option value="4244">乍得</option>
+					          
+					          	<option value="4245">智利</option>
+					          
+					          	<option value="4246">圣诞岛</option>
+					          
+					          	<option value="4247">巴西</option>
+					          
+					          	<option value="4248">布维岛</option>
+					          
+					          	<option value="4249">博茨瓦纳</option>
+					          
+					          	<option value="4251">哥伦比亚</option>
+					          
+					          	<option value="4252">科摩罗</option>
+					          
+					          	<option value="4253">刚果</option>
+					          
+					          	<option value="4254">库克群岛</option>
+					          
+					          	<option value="4255">哥斯达黎加</option>
+					          
+					          	<option value="4256">科特迪瓦</option>
+					          
+					          	<option value="4257">古巴</option>
+					          
+					          	<option value="4258">塞浦路斯</option>
+					          
+					          	<option value="4259">捷克共和国</option>
+					          
+					          	<option value="4260">丹麦</option>
+					          
+					          	<option value="4261">吉布提</option>
+					          
+					          	<option value="4262">多米尼加</option>
+					          
+					          	<option value="4263">多米尼加共和国</option>
+					          
+					          	<option value="4264">东帝汶</option>
+					          
+					          	<option value="4265">厄瓜多尔</option>
+					          
+					          	<option value="4266">埃及</option>
+					          
+					          	<option value="4267">厄瓜多尔</option>
+					          
+					          	<option value="4268">赤道几内亚</option>
+					          
+					          	<option value="4275">芬兰</option>
+					          
+					          	<option value="4276">斐济</option>
+					          
+					          	<option value="4277">法罗群岛</option>
+					          
+					          	<option value="4278">埃塞俄比亚</option>
+					          
+					          	<option value="4279">爱沙尼亚</option>
+					          
+					          	<option value="4280">厄立特里亚</option>
+					          
+					          	<option value="4281">法国大都会</option>
+					          
+					          	<option value="4282">法属圭亚那</option>
+					          
+					          	<option value="4283">法属波利尼西亚</option>
+					          
+					          	<option value="4284">加蓬</option>
+					          
+					          	<option value="4285">冈比亚</option>
+					          
+					          	<option value="4286">乔治亚州</option>
+					          
+					          	<option value="4287">德国</option>
+					          
+					          	<option value="4288">戛纳</option>
+					          
+					          	<option value="4289">直布罗陀</option>
+					          
+					          	<option value="4290">希腊</option>
+					          
+					          	<option value="4291">格陵兰</option>
+					          
+					          	<option value="4292">格林纳达</option>
+					          
+					          	<option value="4293">瓜德罗普岛</option>
+					          
+					          	<option value="4294">关岛</option>
+					          
+					          	<option value="4296">几内亚</option>
+					          
+					          	<option value="4297">几内亚比绍</option>
+					          
+					          	<option value="4298"> 圭亚那</option>
+					          
+					          	<option value="4299">海地</option>
+					          
+					          	<option value="4300">洪都拉斯</option>
+					          
+					          	<option value="4301">匈牙利</option>
+					          
+					          	<option value="4302">冰岛</option>
+					          
+					          	<option value="4303">印度</option>
+					          
+					          	<option value="4334">印尼</option>
+					          
+					          	<option value="4356">伊拉克</option>
+					          
+					          	<option value="4357">爱尔兰</option>
+					          
+					          	<option value="4358">以色列</option>
+					          
+					          	<option value="4359">意大利</option>
+					          
+					          	<option value="4360">牙买加</option>
+					          
+					          	<option value="4361">日本</option>
+					          
+					          	<option value="4362">约旦</option>
+					          
+					          	<option value="4363">哈萨克斯坦</option>
+					          
+					          	<option value="4364">肯尼亚</option>
+					          
+					          	<option value="4365">基里巴斯</option>
+					          
+					          	<option value="4366">科威特</option>
+					          
+					          	<option value="4367">吉尔吉斯斯坦</option>
+					          
+					          	<option value="4368">拉脱维亚</option>
+					          
+					          	<option value="4369">黎巴嫩</option>
+					          
+					          	<option value="4370">莱索托</option>
+					          
+					          	<option value="4371">利比里亚</option>
+					          
+					          	<option value="4373">列支敦士登</option>
+					          
+					          	<option value="4374">立陶宛</option>
+					          
+					          	<option value="4375">卢森堡公国</option>
+					          
+					          	<option value="4376">马其顿王国</option>
+					          
+					          	<option value="4377">马达加斯加岛</option>
+					          
+					          	<option value="4378">马拉维</option>
+					          
+					          	<option value="4379">马来西亚</option>
+					          
+					          	<option value="4380">马尔代夫</option>
+					          
+					          	<option value="4381">马里</option>
+					          
+					          	<option value="4382">马耳他</option>
+					          
+					          	<option value="4383">马绍尔群岛</option>
+					          
+					          	<option value="4384">马提尼克岛</option>
+					          
+					          	<option value="4385">毛里塔尼亚</option>
+					          
+					          	<option value="4386">毛里求斯</option>
+					          
+					          	<option value="4387">马约特岛</option>
+					          
+					          	<option value="4388">墨西哥</option>
+					          
+					          	<option value="4389">密克罗尼西亚</option>
+					          
+					          	<option value="4390">摩尔多瓦</option>
+					          
+					          	<option value="4391">摩纳哥</option>
+					          
+					          	<option value="4392">蒙古</option>
+					          
+					          	<option value="4393">蒙特塞拉特岛</option>
+					          
+					          	<option value="4394">摩洛哥</option>
+					          
+					          	<option value="4395">莫桑比克</option>
+					          
+					          	<option value="4396">缅甸</option>
+					          
+					          	<option value="4397">纳米比亚</option>
+					          
+					          	<option value="4398">瑙鲁</option>
+					          
+					          	<option value="4399">尼泊尔</option>
+					          
+					          	<option value="4400">荷兰</option>
+					          
+					          	<option value="4401">荷属安的列斯</option>
+					          
+					          	<option value="4402">新喀里多尼亚</option>
+					          
+					          	<option value="4403">新西兰</option>
+					          
+					          	<option value="4404">尼加拉瓜</option>
+					          
+					          	<option value="4405">尼日尔</option>
+					          
+					          	<option value="4406">尼日利亚</option>
+					          
+					          	<option value="4407">纽埃岛</option>
+					          
+					          	<option value="4408">诺福克岛</option>
+					          
+					          	<option value="4409">北朝鲜</option>
+					          
+					          	<option value="4410">挪威</option>
+					          
+					          	<option value="4411">阿曼</option>
+					          
+					          	<option value="4412">巴基斯坦</option>
+					          
+					          	<option value="4413">帕劳群岛</option>
+					          
+					          	<option value="4414">巴拿马</option>
+					          
+					          	<option value="4415">巴布亚新几内亚</option>
+					          
+					          	<option value="4416">巴拉圭</option>
+					          
+					          	<option value="4417">秘鲁</option>
+					          
+					          	<option value="4418">菲律宾</option>
+					          
+					          	<option value="4419">皮特克恩</option>
+					          
+					          	<option value="4420">波兰</option>
+					          
+					          	<option value="4421">葡萄牙</option>
+					          
+					          	<option value="4422">波多黎各</option>
+					          
+					          	<option value="4423">卡塔尔</option>
+					          
+					          	<option value="4424">留尼旺岛</option>
+					          
+					          	<option value="4425">罗马尼亚</option>
+					          
+					          	<option value="4426">俄罗斯联邦</option>
+					          
+					          	<option value="4427">卢旺达</option>
+					          
+					          	<option value="4428">圣卢西亚</option>
+					          
+					          	<option value="4433">斯洛文尼亚</option>
+					          
+					          	<option value="4434">新加坡</option>
+					          
+					          	<option value="4435">塞拉利昂</option>
+					          
+					          	<option value="4436">塞舌尔</option>
+					          
+					          	<option value="4437">赛内加亚</option>
+					          
+					          	<option value="4438">沙特阿拉伯</option>
+					          
+					          	<option value="4439">圣马力诺</option>
+					          
+					          	<option value="4440">萨摩亚</option>
+					          
+					          	<option value="4442">所罗门群岛</option>
+					          
+					          	<option value="4443">索马里</option>
+					          
+					          	<option value="4444">南非</option>
+					          
+					          	<option value="4445">韩国</option>
+					          
+					          	<option value="4462">西班牙</option>
+					          
+					          	<option value="4463">斯里兰卡</option>
+					          
+					          	<option value="4464">圣赫勒拿</option>
+					          
+					          	<option value="4465">苏丹</option>
+					          
+					          	<option value="4466">苏里南</option>
+					          
+					          	<option value="4467">斯威士兰</option>
+					          
+					          	<option value="4468">瑞典</option>
+					          
+					          	<option value="4469">瑞士</option>
+					          
+					          	<option value="4470">塔吉克斯坦</option>
+					          
+					          	<option value="4471">坦桑尼亚</option>
+					          
+					          	<option value="4472">泰国</option>
+					          
+					          	<option value="4473">阿拉伯叙利亚共和国</option>
+					          
+					          	<option value="4474">多哥</option>
+					          
+					          	<option value="4475">托克劳群岛</option>
+					          
+					          	<option value="4476">汤加</option>
+					          
+					          	<option value="4477">特立尼达和多巴哥</option>
+					          
+					          	<option value="4478">土耳其</option>
+					          
+					          	<option value="4479">突尼斯</option>
+					          
+					          	<option value="4480">土库曼斯坦</option>
+					          
+					          	<option value="4481">图瓦卢</option>
+					          
+					          	<option value="4482">乌干达</option>
+					          
+					          	<option value="4483">乌克兰</option>
+					          
+					          	<option value="4484">阿拉伯联合酋长国</option>
+					          
+					          	<option value="4485">英国</option>
+					          
+					          	<option value="4537">乌拉圭</option>
+					          
+					          	<option value="4538">乌兹别克斯坦</option>
+					          
+					          	<option value="4539">瓦努阿图</option>
+					          
+					          	<option value="4540">委内瑞拉</option>
+					          
+					          	<option value="4541">越南</option>
+					          
+					          	<option value="4543">西撒哈拉</option>
+					          
+					          	<option value="4544">也门</option>
+					          
+					          	<option value="4545">南斯拉夫</option>
+					          
+					          	<option value="4546">赞比亚</option>
+					          
+					          	<option value="4547">津巴布韦</option>
+					          
+					         </select>
+					        <select name="state" id="state" style="display:none;">
+					         </select>
+					        <select name="city" id="city" style="display:none;">
+					        </select>
+	                        <span id="statediv" class="join_box_caution" style="display:none;"></span>
+	                        <span name="errorInfo"></span>
+	                    </li>
+	                    </form>
+	                    <li class="form-inline">
+	                        <label class="lable-only"></label>
+	                        <input type="button" id="submitbtn" class="btn-y-b input-sort" value="确认提交">
+		                        <span class="btn-skip">
+		                        <a href="#">下次再说</a>
+		                        
+		                        </span>
+	                    </li>
+	                </ul>
+	            </div>
+    </div>
+	
+</div>
+	
+	
+	</body>
+</html>

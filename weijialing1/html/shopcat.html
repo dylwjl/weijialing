@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="../css/shopcat.css" />
+		<script src="../js/jquery-2.1.1.min.js"></script>
+		<script src="../js/addsusees.js"></script>
+		
+	</head>
+	<body>
+				<!--顶部-->
+	<div class="index_top">
+		<!--有一个大的div-->
+		<div class="index_topin">
+			<!--大的div里有两个div-->
+	        <div class="index_top_right">
+	        	<ul>
+	        	    <li id="credit_select" style="display: none;">
+						<span>我的积分:<span id="credit_num" onclick="#'"></span>
+						</span><span id="sign_class" class="sign-no">签到</span><span class="top-sign">|</span>
+					</li>
+	        		<li id="shopingcart">
+						<span class="buy-car">
+						<a href="#" rel="nofollow">购物车</a>
+						</span><span class="top-sign">|</span>
+					</li>
+	        		<li>
+						<span class="sp-left" id="usercenter">
+						   <a href="#" rel="nofollow">用户中心</a>
+						</span><span class="top-sign">|</span>
+					</li>
+	        		<li class="khfuwu">
+	        		    <a href="#" rel="nofollow">客户服务</a><span class="top-sign">|</span>
+	        		    <span class="khhover">客户服务<i></i></span>
+						<div class="khfw_xl">
+							<p class="khfw_bbfk">
+							 <a href="#">帮助中心</a>
+							 <a href="#">意见反馈</a>
+							</p>
+							<p class="kf_time">
+							0579-81530000<br>
+							(08:30-22:00)
+							</p>
+							<p class="kf_email">kefu@yiwugou.com</p>
+						</div>
+	        		</li>
+	        		<li class="index_languagelist">
+						<div><span>中 文</span></div>
+						<ul style="display: none;">
+							<li><a href="#" target="_top">English</a></li>
+							<li><a href="#" target="_top">Russian</a></li>
+							<li><a href="#" target="_top">Arabic</a></li>
+							<li><a href="#" target="_top">Spanish</a></li>
+							<li><a href="#" target="_top">French</a></li>
+						</ul>            
+	        		</li>
+	            </ul>
+	        </div>
+			<div class="index_top_left">
+		    	<span class="top_mob"><a href="#">手机版</a></span>
+				<span class="top-sign">|</span>
+				<a href="#" rel="nofollow">市场信用</a>
+				<span class="top-sign">|</span>
+	   			<span id="w-city">义乌</span>
+	   			<span id="w-img"><img src="img/Connect_logo_1.png" height="16"></span>
+	   			<span id="w-wind"></span>
+	   			<span id="w-temperature">15 ~ 6℃</span>
+	    	</div>
+		     <!--<input type="hidden" id="rootPath" value="">
+		     <input type="hidden" id="imagespath" value="http://images.onccc.com/link2pic2/images/yiwugou/www/images/">
+		     <input type="hidden" id="mapPath" value="http://images.onccc.com/">
+		     <input type="hidden" id="workPath" value="http://work.yiwugou.com">-->
+    	</div>
+</div>
+<!--搜索状态，一共分为三大模块，一个是图片+搜索+登录注册模块-->
+<div class="search-part">
+	<!--search-partleft一共分为earch-logo+station-->
+   	<div class="search-partleft">
+   		
+	    <div class="search-logo">
+	      <a href="#" title="义乌购首页" target="_self" rel="nofollow">
+	        <img src="img/logo2.jpg" width="121" height="54">
+	      </a>
+		</div>
+		<!--station分为span+index-station-bord-->
+   		<div class="station">
+	        <span class="stationspan">分站</span>
+		    <div class="index-station-bord" style="display: none;">
+				<ul>
+					<h5>全国专业市场</h5>
+					<li>
+					<p>
+					<span><a href="#" target="_blank" rel="nofollow">新疆</a></span>
+					<span><a href="#" target="_blank" rel="nofollow">大同</a></span>
+					<span><a href="#" target="_blank" rel="nofollow">金桥</a></span>
+					<span><a href="#" target="_blank" rel="nofollow">遵义</a></span>
+					<span><a href="#" target="_blank" rel="nofollow">速联</a></span>
+					</p>
+					<p>
+					<span><a href="#" target="_blank" rel="nofollow">梁山</a></span>
+					<span><a href="#" target="_blank" rel="nofollow">枣庄</a></span>
+					<span><a href="#" target="_blank" rel="nofollow">泰东</a></span>
+					<span><a href="#" target="_blank" rel="nofollow">湘潭</a></span>
+					<span><a href="#" target="_blank" rel="nofollow">庆云</a></span>
+					</p>
+					<p>
+					<span><a href="#" target="_blank" rel="nofollow">莱阳</a></span>
+					<span><a href="#" target="_blank" rel="nofollow">金田</a></span>
+					<span><a href="#" target="_blank" rel="nofollow">安阳</a></span>
+					<span><a href="#" target="_blank" rel="nofollow">承德</a></span>
+					<span><a href="#" target="_blank" rel="nofollow">龙水</a></span>
+					</p>
+					<p>
+					<span><a href="#" target="_blank" rel="nofollow">三条</a></span>
+					<span><a href="#" target="_blank" rel="nofollow">内蒙</a></span>
+					<span><a href="#" target="_blank" rel="nofollow">房山</a></span>
+					<span><a href="#" target="_blank" rel="nofollow">亿都</a></span>
+					<span><a href="#" target="_blank">兰州</a></span>
+					</p>
+					<p>
+					<span><a href="#" target="_blank" rel="nofollow">广元</a></span>
+					<span><a href="#" target="_blank" rel="nofollow">苏州</a></span>
+					<span><a href="#" target="_blank" rel="nofollow">南宁</a></span>
+					<span><a href="#" target="_blank" rel="nofollow">赣南</a></span>
+					<span><a href="#" target="_blank" rel="nofollow">和道</a></span>	
+					</p>
+					<p>
+					<span><a href="#" target="_blank">海城</a></span>
+					</p>
+					</li>
+				</ul>
+				<ul>
+					<h5>海外市场</h5>
+					<li>
+						 <em><i class="ico-country1"></i><a href="#" target="_blank" rel="nofollow">Japan</a></em>
+						 <em><i class="ico-country2"></i><a href="#" target="_blank" rel="nofollow">Russian</a></em>
+						 <em><i class="ico-country3"></i><a href="#" target="_blank" rel="nofollow">Korea</a></em>
+						 <em><i class="ico-country4"></i><a href="#" target="_blank" rel="nofollow">Spain</a></em>
+						 <em><i class="ico-country5"></i><a href="#" target="_blank" rel="nofollow">Italy</a></em>
+						 <em><i class="ico-country6"></i><a href="#" target="_blank" rel="nofollow">Mexico</a></em>
+						 <em><i class="ico-country7"></i><a href="#" target="_blank" rel="nofollow">Morocco</a></em>
+					 </li>
+				</ul>
+			</div>
+  		</div>
+   </div> 
+</div>
+<!--购物流程-->
+<div class="cart-ban">
+	<ul class="cart-ban-ul">
+		<li class="cart-ban1">
+			<span>查看购物车</span>
+			<span>确认订单信息</span>
+			<span>付款到义乌购</span>
+			<span>确认收货(付款给卖家)</span>
+			<span>评价</span>
+		</li>
+		<li class="cart-ban2">
+			<span>1</span>
+			<span>2</span>
+			<span>3</span>
+			<span>4</span>
+			<span>5</span>
+		</li>
+	</ul>
+	
+</div>
+<form id="cartForm">
+	<div class="cart-prolist">
+		<div class="cart-nopro fontbluelink" id="frame" >
+			购物车内暂时没有商品，您可以去 
+			<a href="#">挑选您喜欢的商铺</a>
+		</div>
+		
+		<div id="frame1" class="cart-frame" style="display: none;">
+			<div class="cart-tit">我的购物车</div>
+			<div class="cart-tit1">购物车说明</div>
+			<div class="cart-protit">
+				<span class="sp1"><input type="checkbox">全选</span>
+				<span class="sp2">商品</span>
+				<span class="sp3">单价</span>
+				<span class="sp4">数量</span>
+				<span class="sp5">小计</span>
+				<span class="sp6">操作</span>
+			</div>
+			<div class="zj" style="display: none;">
+				<span class="zj1">总共</span>
+				<span class="zj2"></span>
+				<span class="zj3">确认下单</span>
+			</div>
+			
+			<!--<div class="cart-company">
+				<div class="company">
+					<span class="sp1x"><input type="checkbox">商铺</span>
+					<span class="sp2x">春秋仿真花</span>
+					<span class="sp3x">
+						<a href="#"><img src="img/Connect_logo_1.png"></a>
+						<a href="#"><img src="img/Connect_logo_1.png"></a>
+						<a href="#"><img src="img/Connect_logo_1.png"></a>
+					</span>
+					<span class="sp4x"><a href="#">继续购买</a></span>
+				</div>
+				
+				<div class="cart-pro">
+					<input type="checkbox">
+					<div class="pro-img">
+						<a href="#" class="hua1cookie"></a>
+					</div>
+					<div class="pro-con">
+						<ul>
+							<li class="c-blink"></li>
+							<li>颜色：粉色</li>
+							<li></li>
+						</ul>
+					</div>
+					<div class="pro-deta">
+						<ul>
+							<li class="pro-price">8.8</li>
+							<li class="pro-number">
+								
+									<input type="button" value="-">
+								<input type="text">
+								<input type="button" value="+">
+								
+								
+							</li>
+							<li class="pro-price-all">￥24</li>
+							<li class="pro-del">删除</li>
+						</ul>
+					</div>
+					
+					
+				</div>
+				
+			</div>-->
+			
+		</div>
+	</div>
+</form>
+
+
+
+
+
+
+	</body>
+</html>
